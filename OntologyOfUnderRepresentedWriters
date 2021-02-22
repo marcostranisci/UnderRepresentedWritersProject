@@ -19,9 +19,6 @@
         <Class IRI="http://purl.org/dc/dcmitype/Dataset"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/dc/dcmitype/Event"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/dc/dcmitype/Image"/>
     </Declaration>
     <Declaration>
@@ -50,6 +47,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/dc/terms/DCMIType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Classification"/>
@@ -169,6 +172,18 @@
         <Class IRI="#MigrantInVulnerableSituation"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Migrating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Migration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MigrationReason"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MigrationRole"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#MigrationType"/>
     </Declaration>
     <Declaration>
@@ -266,6 +281,15 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://www.w3.org/ns/prov#Influence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl#isSatisfiedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl#satisfies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#definesRole"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies"/>
@@ -624,7 +648,7 @@
     <EquivalentClasses>
         <Class IRI="#InternationalMigrant"/>
         <DataHasValue>
-            <DataProperty IRI="#livesWhereWasBorn"/>
+            <DataProperty IRI="#livesInHomeCountry"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
         </DataHasValue>
     </EquivalentClasses>
@@ -634,6 +658,37 @@
             <NamedIndividual IRI="#Citizenship"/>
             <NamedIndividual IRI="#NonCitizenship"/>
         </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Localmigrant"/>
+        <DataHasValue>
+            <DataProperty IRI="#livesWhereWasBorn"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Migrating"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isActionIncludedIn"/>
+            <Class IRI="#Migration"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Migration"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl#satisfies"/>
+                <Class IRI="#MigrationReason"/>
+            </ObjectSomeValuesFrom>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
+                <Class IRI="#Agent"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="2">
+                <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
+                <Class IRI="#TimeIndexedPersonCondition"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#Person"/>
@@ -688,10 +743,6 @@
         <Class IRI="http://purl.org/dc/terms/DCMIType"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.org/dc/dcmitype/Event"/>
-        <Class IRI="http://purl.org/dc/terms/DCMIType"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://purl.org/dc/dcmitype/Image"/>
         <Class IRI="http://purl.org/dc/terms/DCMIType"/>
     </SubClassOf>
@@ -729,7 +780,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Classification"/>
-        <Class IRI="#TimeIndexedPersonCondition"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AfricanCountry"/>
@@ -852,6 +903,22 @@
         <Class IRI="#InternationalMigrant"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Migrating"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Migration"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MigrationReason"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MigrationRole"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Mothertongue"/>
         <Class IRI="#PersonalFeature"/>
     </SubClassOf>
@@ -930,6 +997,10 @@
     <SubClassOf>
         <Class IRI="#2GenNonCitizenMigrant"/>
         <Class IRI="#PersonOfEthnicMinority"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.w3.org/ns/prov#ActivityInfluence"/>
@@ -1021,6 +1092,10 @@
         <NamedIndividual IRI="#Majority"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Marco"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#GroupStatus"/>
         <NamedIndividual IRI="#Minority"/>
     </ClassAssertion>
@@ -1063,11 +1138,6 @@
         <DataProperty IRI="#hasHDI"/>
         <NamedIndividual IRI="#Italy"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.883</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#livesWhereWasBorn"/>
-        <NamedIndividual IRI="#Marco"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasHDI"/>
@@ -1240,6 +1310,10 @@
         <ObjectProperty IRI="#wasBorn"/>
     </FunctionalObjectProperty>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#definesRole"/>
+        <Class IRI="#MigrationReason"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies"/>
         <ObjectUnionOf>
             <Class IRI="#Condition"/>
@@ -1273,7 +1347,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesAction"/>
-        <Class IRI="#TimeIndexedPersonCondition"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesAgent"/>
@@ -1285,7 +1359,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isActionIncludedIn"/>
-        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy"/>
@@ -1311,10 +1385,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
-        <ObjectUnionOf>
-            <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Classification"/>
-            <Class IRI="#TimeIndexedPersonCondition"/>
-        </ObjectUnionOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#adopt"/>
@@ -1426,8 +1497,12 @@
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesAction"/>
-        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesAgent"/>
@@ -1439,7 +1514,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isActionIncludedIn"/>
-        <Class IRI="#TimeIndexedPersonCondition"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy"/>
@@ -1583,11 +1658,11 @@
     </SubObjectPropertyOf>
     <DataPropertyDomain>
         <DataProperty IRI="#livesInHomeCountry"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Classification"/>
+        <Class IRI="#Condition"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#livesWhereWasBorn"/>
-        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Classification"/>
+        <Class IRI="#Condition"/>
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#age"/>
@@ -1684,6 +1759,21 @@ Not transitive</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Migrating</IRI>
+        <Literal>equivalent to: http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl#Action</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Migration</IRI>
+        <Literal>http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Transition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MigrationReason</IRI>
+        <Literal>equivalent to: http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#Plan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#MigrationType</IRI>
         <Literal xml:lang="en">A taxonomy of migration type that could be voluntary or a displacement</Literal>
     </AnnotationAssertion>
@@ -1722,4 +1812,3 @@ Not transitive</Literal>
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-
