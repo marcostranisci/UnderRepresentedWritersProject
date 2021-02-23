@@ -57,14 +57,6 @@
     
 
 
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Norm -->
-
-    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Norm">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Condition"/>
-    </rdf:Description>
-    
-
-
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan -->
 
     <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan">
@@ -111,6 +103,20 @@
     
 
 
+    <!-- http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#AssociationRole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#AssociationRole">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Role"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Classification -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Classification">
@@ -142,6 +148,13 @@
     <!-- http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#ConditionRole -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#ConditionRole">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Condition"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Role"/>
     </owl:Class>
     
@@ -245,15 +258,14 @@
     <owl:Class rdf:about="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Role">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Association"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Person"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Situation"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Person"/>
             </owl:Restriction>
         </owl:equivalentClass>
     </owl:Class>
@@ -273,7 +285,7 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
+                        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent"/>
                         <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Classification"/>
                     </owl:Restriction>
                     <owl:Restriction>
@@ -295,9 +307,16 @@
     <!-- http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#TimeInterval -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#TimeInterval"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Activity -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Activity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Event"/>
+    </owl:Class>
 </rdf:RDF>
 
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-
