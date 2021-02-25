@@ -99,7 +99,15 @@
 
     <!-- http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Association -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Association"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Association">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#AssociationRole"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Description"/>
+    </owl:Class>
     
 
 
