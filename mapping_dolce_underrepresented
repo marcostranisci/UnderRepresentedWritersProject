@@ -1,396 +1,408 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/untitled-ontology-94#"
-     xml:base="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/untitled-ontology-94"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped">
-        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
-    </owl:Ontology>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Classification -->
-
-    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Classification">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Classification"/>
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#TimeIndexedPersonCondition"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description -->
-
-    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Description"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event -->
-
-    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Event"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson -->
-
-    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Person"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place -->
-
-    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Place"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan -->
-
-    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#MigrationReason"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PlanExecution -->
-
-    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PlanExecution">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Migration"/>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies"/>
-                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role -->
-
-    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Role"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation -->
-
-    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Situation"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval -->
-
-    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#TimeInterval"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Association -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Association">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#AssociationRole"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Description"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#AssociationRole -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#AssociationRole">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Association"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Role"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Classification -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Classification">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#TimeIndexedPersonCondition"/>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isComponentOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#TimeIndexedPersonCondition"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Situation"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Place"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#TimeInterval"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Condition -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Condition">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#ConditionRole"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Description"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#ConditionRole -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#ConditionRole">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Condition"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Role"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Description -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Description"/>
-    
-
-
-    <!-- http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Event -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Event"/>
-    
-
-
-    <!-- http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Migrating -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Migrating">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Event"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Migration -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Migration">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Migrating"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#MigrationRole"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Person"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#TimeInterval"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#MigrationReason"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Situation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Place"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#MigrationReason -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#MigrationReason">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#MigrationRole"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Description"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#MigrationRole -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#MigrationRole">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Role"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Person -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Person">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Migrating"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isAgentIncludedIn"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Migration"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isAgentIncludedIn"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#TimeIndexedPersonCondition"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Migrating"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Place -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Place"/>
-    
-
-
-    <!-- http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Role -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Role">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Person"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Situation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Situation -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Situation"/>
-    
-
-
-    <!-- http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#TimeIndexedPersonCondition -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#TimeIndexedPersonCondition">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#ConditionRole"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Person"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Classification"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Situation"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#TimeInterval -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#TimeInterval"/>
-    
-
-
-    <!-- http://www.w3.org/ns/prov#Activity -->
-
-    <owl:Class rdf:about="http://www.w3.org/ns/prov#Activity">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped#Event"/>
-    </owl:Class>
-</rdf:RDF>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped"
+     versionIRI="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented#">
+    <Prefix name="" IRI="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented_mapped"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="urw" IRI="http://www.semanticweb.org/nbdotti62/ontologies/2021/1/underrepresented#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.ontologydesignpatterns.org/ont/dul/DUL.owl</Import>
+    <Declaration>
+        <Class IRI="#Association"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AssociationRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Classification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Condition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConditionRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Description"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Migrating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Migration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MigrationPlan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MigrationReason"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MigrationRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlaceOfArrival"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlaceOfDeparture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Situation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TimeIndexedPersonStatus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TimeInterval"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/>
+        <Class IRI="#Description"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+        <Class IRI="#Event"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal"/>
+        <Class IRI="#MigrationReason"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson"/>
+        <Class IRI="#Person"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place"/>
+        <Class IRI="#Place"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+        <Class IRI="#MigrationPlan"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PlanExecution"/>
+        <Class IRI="#Migration"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PlanExecution"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/>
+        <Class IRI="#Role"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
+        <Class IRI="#Situation"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeIndexedRelation"/>
+        <Class IRI="#Migration"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeIndexedRelation"/>
+        <Class IRI="#TimeIndexedPersonStatus"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"/>
+        <Class IRI="#TimeInterval"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Association"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines"/>
+            <Class IRI="#AssociationRole"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Classification"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
+                <Class IRI="#Condition"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
+                <Class IRI="#Place"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
+                <Class IRI="#TimeInterval"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Condition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines"/>
+            <Class IRI="#ConditionRole"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Migration"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
+                <Class IRI="#Migrating"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
+                <Class IRI="#MigrationRole"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
+                <Class IRI="#Person"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
+                <Class IRI="#TimeInterval"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesAction"/>
+                <Class IRI="#Migrating"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Migration"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies"/>
+            <Class IRI="#MigrationPlan"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TimeIndexedPersonStatus"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
+                <Class IRI="#ConditionRole"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
+                <Class IRI="#Person"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TimeIndexedPersonStatus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent"/>
+            <Class IRI="#Classification"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Association"/>
+        <Class IRI="#Description"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AssociationRole"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AssociationRole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn"/>
+            <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AssociationRole"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn"/>
+            <Class IRI="#Association"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Classification"/>
+        <Class IRI="#TimeIndexedPersonStatus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Condition"/>
+        <Class IRI="#Description"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConditionRole"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConditionRole"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn"/>
+            <Class IRI="#Condition"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Migrating"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Migration"/>
+        <Class IRI="#Situation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Migration"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
+            <Class IRI="#Place"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MigrationPlan"/>
+        <Class IRI="#Description"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MigrationPlan"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent"/>
+            <Class IRI="#MigrationReason"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MigrationReason"/>
+        <Class IRI="#Description"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MigrationReason"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines"/>
+            <Class IRI="#MigrationRole"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MigrationRole"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MigrationRole"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn"/>
+            <Class IRI="#MigrationReason"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRole"/>
+                    <Class IRI="#ConditionRole"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting"/>
+                    <Class IRI="#TimeIndexedPersonStatus"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRole"/>
+                    <Class IRI="#MigrationRole"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting"/>
+                    <Class IRI="#Migration"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn"/>
+            <Class IRI="#Migrating"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Place"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting"/>
+            <Class IRI="#Classification"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlaceOfArrival"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlaceOfArrival"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting"/>
+            <Class IRI="#Migration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlaceOfDeparture"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlaceOfDeparture"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting"/>
+            <Class IRI="#Migration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Role"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting"/>
+                <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"/>
+                <Class IRI="#Person"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TimeIndexedPersonStatus"/>
+        <Class IRI="#Situation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TimeInterval"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting"/>
+            <Class IRI="#Classification"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TimeInterval"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting"/>
+            <Class IRI="#Migration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+</Ontology>
 
 
 
