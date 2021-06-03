@@ -5,10 +5,14 @@ import numpy as np
 import pandas as pd
 import spacy
 import wikipedia
+
+### LOAD A SPACY MODEL ###
 def implement_spacy_model(a_lang,a_size):
     nlp = spacy.load(a_lang+'_core_web_'+a_size)
     return nlp
 
+
+### GET A BIO FROM WIKIPEDIA ###
 def get_bio(a_name):
 
     page = wikipedia.page(a_name)
@@ -16,6 +20,7 @@ def get_bio(a_name):
 
     return a_bio
 
+### TAKE A UNIVERSAL VERB INDEX AS INPUT (eg: ecome-109.1), AND GIVE THE FAMILY OF VERBS UNDER THIS ID  (eg: come out|turn|turn up) AS OUTPUT ###
 def infer_verbs_from_uvi(id):
     df = pd.read_csv('class_id_verbs.csv')
 
@@ -26,6 +31,7 @@ def infer_verbs_from_uvi(id):
 l =list()
 
 
+### BLEND TOGETHER THE UNIVERSAL VERB INDEX AND RULES IN THE FILE 'regoleDEF.csv'###
 def create_lsp(a_rule):
 
     full_rule = " ".join(a_rule)
@@ -43,7 +49,7 @@ def create_lsp(a_rule):
 
 
 
-
+### TAKE A BIO IN A RAW TEXT FORMAT AND GIVE BACK A LIST OF SENTENCES WITH AT LEAST ONE ORGANIZATION OR A GEOPOLITICAL ENTITY AND A VERB ###
 def preproc_bio(a_bio):
     life_events = list()
     doc = nlp(a_bio)
@@ -57,7 +63,7 @@ def preproc_bio(a_bio):
 
     return life_events
 
-
+### CONVERT A SENTENCE IN A LEXICO SEMANTIC PATTERN SEARCHABLE FORMAT ###
 def searchable_sent(a_sent):
     tokens = list()
     sent = nlp(a_sent)
@@ -74,7 +80,7 @@ def searchable_sent(a_sent):
 
     return searchable,a_sent
 
-
+### SEARCH FOR ALL THE LEXICO SEMANTIC PATTERNS IN A SENTENCE ###
 def predict_lsp(a_sent,lsps):
     odps = list()
     for item in lsps:
@@ -91,18 +97,12 @@ def predict_lsp(a_sent,lsps):
     #print(item)
     return final_odp
 
-spamreader = pd.read_csv('class_id.csv')
-
-
-
-
-
 nlp = implement_spacy_model('en','lg')
 bio = get_bio('Mark Mathabane')
 sentences = preproc_bio(bio)
 #print(sentences)
 toBeSearched_sents = [searchable_sent(x) for x in sentences if x is not np.NaN]
-rules = list(set([tuple(x) for x in csv.reader(open('regoleDEF_2.csv'))]))
+rules = list(set([tuple(x) for x in csv.reader(open('regoleDEF.csv'))]))
 lsps= [create_lsp(list(x)) for x in rules]
 predictedLsp = [predict_lsp(x,lsps) for x in toBeSearched_sents if x is not np.NaN]
 
