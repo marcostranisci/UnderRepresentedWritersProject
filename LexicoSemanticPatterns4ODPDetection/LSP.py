@@ -11,15 +11,6 @@ def implement_spacy_model(a_lang,a_size):
     nlp = spacy.load(a_lang+'_core_web_'+a_size)
     return nlp
 
-
-### GET A BIO FROM WIKIPEDIA ###
-def get_bio(a_name):
-
-    page = wikipedia.page(a_name)
-    a_bio = page.content
-
-    return a_bio
-
 ### TAKE A UNIVERSAL VERB INDEX AS INPUT (eg: ecome-109.1), AND GIVE THE FAMILY OF VERBS UNDER THIS ID  (eg: come out|turn|turn up) AS OUTPUT ###
 def infer_verbs_from_uvi(id):
     df = pd.read_csv('class_id_verbs.csv')
@@ -29,7 +20,6 @@ def infer_verbs_from_uvi(id):
 
     return id,verbs,class_
 l =list()
-
 
 ### BLEND TOGETHER THE UNIVERSAL VERB INDEX AND RULES IN THE FILE 'regoleDEF.csv'###
 def create_lsp(a_rule):
@@ -47,7 +37,13 @@ def create_lsp(a_rule):
         lsp = "".join(['(?=.*' + x + ')' for x in a_rule if x != 'x'])+'.*'
     return lsp,odp,full_rule
 
+### GET A BIO FROM WIKIPEDIA ###
+def get_bio(a_name):
 
+    page = wikipedia.page(a_name)
+    a_bio = page.content
+
+    return a_bio
 
 ### TAKE A BIO IN A RAW TEXT FORMAT AND GIVE BACK A LIST OF SENTENCES WITH AT LEAST ONE ORGANIZATION OR A GEOPOLITICAL ENTITY AND A VERB ###
 def preproc_bio(a_bio):
@@ -97,14 +93,21 @@ def predict_lsp(a_sent,lsps):
     #print(item)
     return final_odp
 
+
+### IMPLEMENTING SPACY ###
 nlp = implement_spacy_model('en','lg')
+
+# CREATING RULES ###
+rules = list(set([tuple(x) for x in csv.reader(open('regoleDEF.csv'))]))
+LSPs= [create_lsp(list(x)) for x in rules]
+
+### FROM BIO TO LIST OF SEARCHABLE SENTENCES ###
 bio = get_bio('Mark Mathabane')
 sentences = preproc_bio(bio)
-#print(sentences)
 toBeSearched_sents = [searchable_sent(x) for x in sentences if x is not np.NaN]
-rules = list(set([tuple(x) for x in csv.reader(open('regoleDEF.csv'))]))
-lsps= [create_lsp(list(x)) for x in rules]
-predictedLsp = [predict_lsp(x,lsps) for x in toBeSearched_sents if x is not np.NaN]
+
+###PREDICTING ODP THROUGH LEXICO SEMANTIC PATTERNS ###
+predictedLsp = [predict_lsp(x,LSPs) for x in toBeSearched_sents if x is not np.NaN]
 
 print(predictedLsp)
 #lsp,odp = [create_lsp(list(x)) for x in rules]
