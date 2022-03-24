@@ -20,141 +20,140 @@ visit,visit.v.04 ## visit.v.07 ## visit.v.01 ## visit.v.08,13,"come to see in an
 give,give.v.01 ## give.v.43 ## yield.v.01 ## move_over.v.01 ## pass.v.05,12,"cause to have, in the abstract sense or physical sense ## consent to engage in sexual intercourse with a man ## be the cause or source of ## move in order to make room for someone for something ## place into the hands or custody of",0,0,1,7,give ## give ## give ## give ## give
 appoint,appoint.v.01 ## appoint.v.02 ## appoint.v.03,11,"create and charge with a task or function ## assign a duty, responsibility or obligation to ## furnish",0,0,5,8,appoint ## appoint ## appoint
 release,release.v.09 ## turn.v.08 ## release.v.08 ## secrete.v.01,10,release (gas or energy) as a result of a chemical reaction or physical decomposition ## let (something) fall or spill from a container ## part with a possession or right ## generate and separate from cells or bodily fluids,1,0,1,4,release ## release ## release ## release
-elect,elect.v.02 ## elect.v.01,10,choose ## select by a vote for an office or membership,0,0,1,8,elect ## elect
 establish,prove.v.02,10,"establish the validity of something, as by an example, explanation or experiment",0,0,2,6,establish
-go,go.v.10 ## rifle.v.02,9,be or continue to be in a certain condition ## go through in search of something; search through someone's belongings in an unauthorized way,1,0,6,0,go ## go
+elect,elect.v.02 ## elect.v.01,10,choose ## select by a vote for an office or membership,0,0,1,8,elect ## elect
 make,make.v.46 ## make.v.08 ## make.v.48 ## construct.v.01 ## make.v.14 ## name.v.03 ## take.v.27 ## make.v.38,9,favor the development of ## compel or make somebody or something to act in a certain way ## behave in a certain way ## make by combining materials and parts ## be or be capable of being changed or made into ## charge with a function; charge to be ## head into a specified direction ## gather and light the materials for,0,0,0,0,make ## make ## make ## make ## make ## make ## make ## make
+go,go.v.10 ## rifle.v.02,9,be or continue to be in a certain condition ## go through in search of something; search through someone's belongings in an unauthorized way,1,0,6,0,go ## go
 perform,perform.v.03,9,give a performance (of something),0,1,3,1,perform
-spend,spend.v.01 ## spend.v.03,8,pass time in a specific way ## spend completely,1,0,5,1,spend ## spend
-"name, list",list.v.01,8,give or make a list of; name individually; give the names of,0,0,1,5,"name, list"
-travel,travel.v.06,8,"travel from place to place, as for the purpose of finding work, preaching, or acting as a judge",0,0,6,1,travel
-appear,appear.v.06,8,"appear as a character on stage or appear in a play, etc.",0,0,2,5,appear
 win,win.v.01 ## acquire.v.05,8,be the winner in a contest or competition; be victorious ## win something through one's efforts,0,0,2,2,win ## win
+appear,appear.v.06,8,"appear as a character on stage or appear in a play, etc.",0,0,2,5,appear
+spend,spend.v.01 ## spend.v.03,8,pass time in a specific way ## spend completely,1,0,5,1,spend ## spend
+travel,travel.v.06,8,"travel from place to place, as for the purpose of finding work, preaching, or acting as a judge",0,0,6,1,travel
+"name, list",list.v.01,8,give or make a list of; name individually; give the names of,0,0,1,5,"name, list"
 death,death.n.06 ## death.n.02,7,the personification of death ## the permanent end of all life functions in an organism or part of an organism,0,0,0,0,death ## death
-name,name.v.02,6,give the name or identifying characteristics of; refer to by name or some other identifying characteristic property,0,0,0,6,name
+"get, produce, develop, grow, acquire",grow.v.08,6,come to have or undergo a change of (physical features and attributes),0,0,1,3,"get, produce, develop, grow, acquire"
 send,station.v.01,6,assign to a station,0,0,5,0,send
-"develop, get, grow, acquire, produce",grow.v.08,6,come to have or undergo a change of (physical features and attributes),0,0,1,3,"develop, get, grow, acquire, produce"
-play,play.v.12 ## bet.v.02 ## play.v.16 ## play.v.15,5,"pretend to be somebody in the framework of a game or playful activity ## stake on the outcome of an issue ## engage in an activity as if it were a game rather than take it seriously ## put (a card or piece) into play during a game, or act strategically as if in a card game",0,0,0,0,play ## play ## play ## play
+name,name.v.02,6,give the name or identifying characteristics of; refer to by name or some other identifying characteristic property,0,0,0,6,name
 include,include.v.03 ## admit.v.03,5,"add as part of something else; put in as part of a set, group, or category ## allow participation in or the right to be part of; permit to exercise the rights, functions, and responsibilities of",0,0,1,3,include ## include
 "receive, invite",receive.v.05,5,express willingness to have in one's home or environs,0,1,1,1,"receive, invite"
-"pretend, make",make.v.42,5,"represent fictitiously, as in a play, or pretend to be or act like",0,0,2,1,"pretend, make"
-translate,translate.v.08,5,subject to movement in which every part of the body moves parallel to and the same distance as every other point on the body,0,0,0,0,translate
 "lead, conduct",conduct.v.02,5,"lead, as in the performance of a composition",0,0,0,1,"lead, conduct"
+play,play.v.12 ## bet.v.02 ## play.v.16 ## play.v.15,5,"pretend to be somebody in the framework of a game or playful activity ## stake on the outcome of an issue ## engage in an activity as if it were a game rather than take it seriously ## put (a card or piece) into play during a game, or act strategically as if in a card game",0,0,0,0,play ## play ## play ## play
+translate,translate.v.08,5,subject to movement in which every part of the body moves parallel to and the same distance as every other point on the body,0,0,0,0,translate
+"pretend, make",make.v.42,5,"represent fictitiously, as in a play, or pretend to be or act like",0,0,2,1,"pretend, make"
+edit,edit.v.03,4,cut and assemble the components of,0,0,0,0,edit
 earn,gain.v.08,4,earn on some commercial or business transaction; earn as salary or wages,0,1,1,4,earn
 feature,sport.v.01 ## have.v.02,4,wear or display in an ostentatious or proud manner ## have as a feature,0,0,1,1,feature ## feature
-edit,edit.v.03,4,cut and assemble the components of,0,0,0,0,edit
 set,set.v.17 ## set_up.v.04 ## typeset.v.01,4,"insert (a nail or screw below the surface, as into a countersink) ## get ready for a particular purpose or event ## set in type",0,0,2,0,set ## set ## set
-"honour, honor",respect.v.02,3,show respect towards,0,0,1,2,"honour, honor"
+bring,institute.v.02 ## bring.v.03,3,"advance or set forth in court; , ## cause to happen or to occur as a consequence",0,0,0,0,bring ## bring
+sign,bless.v.03 ## sign.v.01,3,make the sign of the cross over someone in order to call on God for protection; consecrate ## mark with one's signature; write one's name (on),0,0,0,1,sign ## sign
+retirement,retirement.n.01 ## retirement.n.03,3,the state of being retired from one's business or occupation ## withdrawal for prayer and study and meditation,0,0,0,0,retirement ## retirement
+graduation,gradation.n.03 ## graduation.n.03 ## graduation.n.01,3,the act of arranging in grades ## a line (as on a vessel or ruler) that marks a measurement ## the successful completion of a program of study,0,0,0,0,graduation ## graduation ## graduation
+publication,publication.n.03 ## publication.n.04,3,the communication of something to the public; making information generally known ## the business of issuing printed matter for sale or distribution,0,0,1,0,publication ## publication
 marry,marry.v.02,3,perform a marriage ceremony,0,0,0,0,marry
 settle,settle.v.07 ## settle.v.19,3,become settled or established and stable in one's residence or life style ## get one's revenge for a wrong or an injury,0,0,3,0,settle ## settle
-publication,publication.n.03 ## publication.n.04,3,the communication of something to the public; making information generally known ## the business of issuing printed matter for sale or distribution,0,0,1,0,publication ## publication
-"send, transmit",air.v.03,3,"broadcast over the airwaves, as in radio or television",0,0,2,1,"send, transmit"
-graduation,gradation.n.03 ## graduation.n.03 ## graduation.n.01,3,the act of arranging in grades ## a line (as on a vessel or ruler) that marks a measurement ## the successful completion of a program of study,0,0,0,0,graduation ## graduation ## graduation
-launch,launch.v.03 ## launch.v.06,3,launch for the first time; launch on a maiden voyage ## smoothen the surface of,0,0,0,2,launch ## launch
-kill,kill.v.05 ## stamp_out.v.01 ## kill.v.15,3,be the source of great pain for ## end or extinguish by forceful means ## destroy a vitally essential quality of or in,1,0,1,0,kill ## kill ## kill
-retirement,retirement.n.01 ## retirement.n.03,3,the state of being retired from one's business or occupation ## withdrawal for prayer and study and meditation,0,0,0,0,retirement ## retirement
-involve,involve.v.06,3,occupy or engage the interest of,0,0,0,2,involve
-sign,bless.v.03 ## sign.v.01,3,make the sign of the cross over someone in order to call on God for protection; consecrate ## mark with one's signature; write one's name (on),0,0,0,1,sign ## sign
-screen,screen.v.03,3,examine in order to test suitability,0,0,2,0,screen
+"honor, honour",respect.v.02,3,show respect towards,0,0,1,2,"honor, honour"
 call,call.v.20 ## call.v.02 ## call.v.21,3,challenge (somebody) to make good on a statement; charge with or censure for an offense ## ascribe a quality to or give a name of a common noun that reflects a quality ## declare in the capacity of an umpire or referee,0,0,1,2,call ## call ## call
-succeed,succeed.v.02,3,be the successor (of),0,0,0,0,succeed
-submit,submit.v.03,3,yield to the control of another,0,0,0,0,submit
-bring,institute.v.02 ## bring.v.03,3,"advance or set forth in court; , ## cause to happen or to occur as a consequence",0,0,0,0,bring ## bring
+screen,screen.v.03,3,examine in order to test suitability,0,0,2,0,screen
 decide,decide.v.01 ## decide.v.03,3,"reach, make, or come to a decision about something ## cause to decide",0,0,0,0,decide ## decide
-hold,reserve.v.04,2,arrange for and reserve (something for someone else) in advance,0,0,1,1,hold
-commit,give.v.18 ## commit.v.03,2,"give entirely to a specific person, activity, or cause ## cause to be admitted; of persons to an institution",0,0,0,0,commit ## commit
-run,run.v.33,2,run with the ball; in such sports as football,0,0,1,0,run
-"accept, take",take.v.20,2,make use of or accept for some purpose,0,0,0,0,"accept, take"
-"purchase, buy",buy.v.01,2,obtain by purchase; acquire by means of a financial transaction,0,0,1,1,"purchase, buy"
-use,use.v.04 ## use.v.06,2,seek or achieve an end by using to one's advantage ## habitually do something (use only in the past tense),0,0,0,0,use ## use
+"transmit, send",air.v.03,3,"broadcast over the airwaves, as in radio or television",0,0,2,1,"transmit, send"
+succeed,succeed.v.02,3,be the successor (of),0,0,0,0,succeed
+involve,involve.v.06,3,occupy or engage the interest of,0,0,0,2,involve
+kill,kill.v.05 ## stamp_out.v.01 ## kill.v.15,3,be the source of great pain for ## end or extinguish by forceful means ## destroy a vitally essential quality of or in,1,0,1,0,kill ## kill ## kill
+launch,launch.v.03 ## launch.v.06,3,launch for the first time; launch on a maiden voyage ## smoothen the surface of,0,0,0,2,launch ## launch
+submit,submit.v.03,3,yield to the control of another,0,0,0,0,submit
 free,exempt.v.01,2,grant relief or an exemption from a rule or requirement to,0,0,0,0,free
-"name, diagnose",diagnose.v.01,2,determine or distinguish the nature of a problem or an illness through a diagnostic analysis,1,0,0,1,"name, diagnose"
+"accept, take",take.v.20,2,make use of or accept for some purpose,0,0,0,0,"accept, take"
 get,induce.v.02 ## get.v.14,2,"cause to do; cause to act in a specified manner ## communicate with a place or person; establish communication with, as if by telephone",0,0,1,0,get ## get
-put,put.v.02,2,cause to be in a certain state; cause to be in a certain relation,0,0,0,0,put
 announce,announce.v.03,2,give the names of,0,0,0,0,announce
-praise,praise.v.01,2,express approval of,0,0,0,1,praise
-grant,concede.v.03,2,give over; surrender or relinquish to the physical control of another,0,0,1,0,grant
-raise,raise.v.23,2,multiply (a number) by itself a specified number of times: 8 is 2 raised to the power 3,0,0,2,0,raise
-hire,rent.v.04,2,hold under a lease or rental agreement; of goods and services,0,0,0,2,hire
-arrive,arrive.v.02,2,succeed in a big way; get to the top,0,0,1,0,arrive
-lead,lead.v.03 ## lead.v.08,2,tend to or result in ## be ahead of others; be the first,0,0,0,0,lead ## lead
-refuse,deny.v.04 ## resist.v.05,2,refuse to let have ## resist immunologically the introduction of some foreign tissue or organ,0,0,0,1,refuse ## refuse
-catch,catch.v.04,2,take hold of so as to seize or restrain or stop the motion of,1,0,0,1,catch
-finish,end.v.01,2,"have an end, in a temporal, spatial, or quantitative sense; either spatial or metaphorical",0,0,0,0,finish
-accuse,charge.v.02,2,"blame for, make a claim of wrongdoing or misbehavior against",0,0,0,0,accuse
-deliver,extradite.v.01 ## rescue.v.01,2,hand over to the authorities of another country ## free from harm or evil,0,0,0,1,deliver ## deliver
+"premiere, premier",premier.v.02,2,perform a work for the first time,0,0,0,1,"premiere, premier"
 print,print.v.02,2,write as if with print; not cursive,0,0,2,0,print
+run,run.v.33,2,run with the ball; in such sports as football,0,0,1,0,run
+raise,raise.v.23,2,multiply (a number) by itself a specified number of times: 8 is 2 raised to the power 3,0,0,2,0,raise
 produce,grow.v.07 ## produce.v.06,2,"cultivate by growing, often involving improvements by means of agricultural techniques ## bring onto the market or release",0,0,1,0,produce ## produce
-debut,debut.v.02,2,appear for the first time in public,0,0,0,0,debut
-"embrace, adopt",espouse.v.03,2,"take up the cause, ideology, practice, method, of someone and use it as one's own",0,1,0,0,"embrace, adopt"
-vote,vote.v.01 ## vote.v.04,2,express one's preference for a candidate or for a measure or resolution; cast a vote ## be guided by in voting,0,0,0,0,vote ## vote
-criticize,criticize.v.02 ## knock.v.06,2,act as a critic ## find fault with; express criticism of; point out real or perceived flaws,1,0,0,0,criticize ## criticize
-"premier, premiere",premier.v.02,2,perform a work for the first time,0,0,0,1,"premier, premiere"
-escape,scat.v.01 ## get_off.v.05,2,flee; take to one's heels; cut and run ## escape potentially unpleasant consequences; get away with a forbidden action,0,0,0,0,escape ## escape
-create,create.v.04 ## produce.v.02,2,"invest with a new title, office, or rank ## create or manufacture a man-made product",0,0,0,0,create ## create
 organize,organize.v.05,2,arrange by systematic planning and united effort,0,0,1,0,organize
-sell,sell.v.02 ## sell.v.07,2,be sold at a certain price or in a certain way ## be responsible for the sale of,0,0,0,0,sell ## sell
-appearance,appearance.n.06 ## appearance.n.03,2,pretending that something is the case in order to make a good impression ## formal attendance (in court or at a hearing) of a party in an action,0,0,0,2,appearance ## appearance
-work,work.v.01 ## work.v.19,2,"exert oneself by doing mental or physical work for a purpose or out of necessity ## gratify and charm, usually in order to influence",0,0,2,2,work ## work
-"expose, discover",unwrap.v.02,2,make known to the public information that was previously known only to a few people or that was meant to be kept a secret,0,0,0,0,"expose, discover"
+accuse,charge.v.02,2,"blame for, make a claim of wrongdoing or misbehavior against",0,0,0,0,accuse
+hire,rent.v.04,2,hold under a lease or rental agreement; of goods and services,0,0,0,2,hire
+hold,reserve.v.04,2,arrange for and reserve (something for someone else) in advance,0,0,1,1,hold
+"purchase, buy",buy.v.01,2,obtain by purchase; acquire by means of a financial transaction,0,0,1,1,"purchase, buy"
+refuse,deny.v.04 ## resist.v.05,2,refuse to let have ## resist immunologically the introduction of some foreign tissue or organ,0,0,0,1,refuse ## refuse
+praise,praise.v.01,2,express approval of,0,0,0,1,praise
+lead,lead.v.03 ## lead.v.08,2,tend to or result in ## be ahead of others; be the first,0,0,0,0,lead ## lead
+"name, diagnose",diagnose.v.01,2,determine or distinguish the nature of a problem or an illness through a diagnostic analysis,1,0,0,1,"name, diagnose"
+"adopt, embrace",espouse.v.03,2,"take up the cause, ideology, practice, method, of someone and use it as one's own",0,1,0,0,"adopt, embrace"
+put,put.v.02,2,cause to be in a certain state; cause to be in a certain relation,0,0,0,0,put
+grant,concede.v.03,2,give over; surrender or relinquish to the physical control of another,0,0,1,0,grant
+finish,end.v.01,2,"have an end, in a temporal, spatial, or quantitative sense; either spatial or metaphorical",0,0,0,0,finish
+create,create.v.04 ## produce.v.02,2,"invest with a new title, office, or rank ## create or manufacture a man-made product",0,0,0,0,create ## create
+use,use.v.04 ## use.v.06,2,seek or achieve an end by using to one's advantage ## habitually do something (use only in the past tense),0,0,0,0,use ## use
 select,choose.v.01,2,"pick out, select, or choose from a number of alternatives",0,0,0,0,select
+criticize,criticize.v.02 ## knock.v.06,2,act as a critic ## find fault with; express criticism of; point out real or perceived flaws,1,0,0,0,criticize ## criticize
+appearance,appearance.n.06 ## appearance.n.03,2,pretending that something is the case in order to make a good impression ## formal attendance (in court or at a hearing) of a party in an action,0,0,0,2,appearance ## appearance
+debut,debut.v.02,2,appear for the first time in public,0,0,0,0,debut
+commit,give.v.18 ## commit.v.03,2,"give entirely to a specific person, activity, or cause ## cause to be admitted; of persons to an institution",0,0,0,0,commit ## commit
+deliver,extradite.v.01 ## rescue.v.01,2,hand over to the authorities of another country ## free from harm or evil,0,0,0,1,deliver ## deliver
+"discover, expose",unwrap.v.02,2,make known to the public information that was previously known only to a few people or that was meant to be kept a secret,0,0,0,0,"discover, expose"
+catch,catch.v.04,2,take hold of so as to seize or restrain or stop the motion of,1,0,0,1,catch
 contribution,contribution.n.03,2,act of giving in common with others for a common purpose especially to a charity,0,0,0,0,contribution
+sell,sell.v.02 ## sell.v.07,2,be sold at a certain price or in a certain way ## be responsible for the sale of,0,0,0,0,sell ## sell
+arrive,arrive.v.02,2,succeed in a big way; get to the top,0,0,1,0,arrive
+work,work.v.01 ## work.v.19,2,"exert oneself by doing mental or physical work for a purpose or out of necessity ## gratify and charm, usually in order to influence",0,0,2,2,work ## work
+vote,vote.v.01 ## vote.v.04,2,express one's preference for a candidate or for a measure or resolution; cast a vote ## be guided by in voting,0,0,0,0,vote ## vote
+escape,scat.v.01 ## get_off.v.05,2,flee; take to one's heels; cut and run ## escape potentially unpleasant consequences; get away with a forbidden action,0,0,0,0,escape ## escape
+telephone,call.v.03,1,get or try to get into communication (with someone) by telephone,0,0,0,0,telephone
+support,hold.v.10,1,be the physical support of; carry the weight of,0,0,0,0,support
 present,present.v.02,1,bring forward and present to the mind,0,0,0,0,present
-voice,voice.v.01,1,give voice to,0,0,0,0,voice
-reach,reach.v.03,1,move forward or upward in order to touch; also in a metaphorical sense,0,0,0,0,reach
+survive,survive.v.02,1,"continue in existence after (an adversity, etc.)",0,0,0,0,survive
 re-elected,re-elected,1,re-elected,0,0,0,1,re-elected
-accusation,accusation.n.02,1,an assertion that someone is guilty of a fault or offence,0,0,0,0,accusation
-transfer,transplant.v.01,1,lift and reset in another soil or situation,0,0,0,1,transfer
-try,try_on.v.01,1,put on a garment in order to see whether it fits and looks nice,0,0,0,0,try
-qualify,stipulate.v.01,1,specify as a condition or requirement in a contract or agreement; make an express demand or provision in an agreement,0,0,0,1,qualify
 rat,rat.v.04,1,give (hair) the appearance of being fuller by using a rat,0,0,0,0,rat
-turn,turn.v.19,1,cause to move along an axis or into a new direction,0,0,0,0,turn
-prevent,prevent.v.02,1,stop (someone or something) from doing something or being in a certain state,0,0,0,0,prevent
+absence,absence.n.04,1,"the occurrence of an abrupt, transient loss or impairment of consciousness (which is not subsequently remembered), sometimes with light twitching, fluttering eyelids, etc.; common in petit mal epilepsy",0,0,0,0,absence
+voice,voice.v.01,1,give voice to,0,0,0,0,voice
 promote,promote.v.05,1,"change a pawn for a better piece by advancing it to the eighth row, or change a checker piece for a more valuable piece by moving it to the row closest to your opponent",0,0,0,0,promote
-undergo,undergo.v.01,1,pass through,0,0,0,0,undergo
-protest,protest.v.01,1,utter words of protest,0,0,0,1,protest
-pull,pull.v.04,1,apply force so as to cause motion towards the source of the motion,1,0,0,1,pull
+tenure,tenure.v.01,1,give life-time employment to,0,0,0,1,tenure
 threaten,threaten.v.03,1,to be a menacing indication of something:,0,0,0,0,threaten
 tie,tie.v.09,1,unite musical notes by a tie,0,0,0,1,tie
-start,start.v.11,1,play in the starting lineup,0,0,0,0,start
-reconcile,reconcile.v.03,1,come to terms,0,0,0,0,reconcile
-subject,subjugate.v.02,1,make subservient; force to submit or subdue,0,0,0,0,subject
-succumb,yield.v.13,1,consent reluctantly,0,0,0,0,succumb
-review,review.v.05,1,"look back upon (a period of time, sequence of events); remember",0,0,0,0,review
-revitalize,revitalize.v.02,1,give new life or vigor to,0,0,1,0,revitalize
+transfer,transplant.v.01,1,lift and reset in another soil or situation,0,0,0,1,transfer
+reach,reach.v.03,1,move forward or upward in order to touch; also in a metaphorical sense,0,0,0,0,reach
+pull,pull.v.04,1,apply force so as to cause motion towards the source of the motion,1,0,0,1,pull
+try,try_on.v.01,1,put on a garment in order to see whether it fits and looks nice,0,0,0,0,try
+turn,turn.v.19,1,cause to move along an axis or into a new direction,0,0,0,0,turn
+undergo,undergo.v.01,1,pass through,0,0,0,0,undergo
+prevent,prevent.v.02,1,stop (someone or something) from doing something or being in a certain state,0,0,0,0,prevent
+protest,protest.v.01,1,utter words of protest,0,0,0,1,protest
+qualify,stipulate.v.01,1,specify as a condition or requirement in a contract or agreement; make an express demand or provision in an agreement,0,0,0,1,qualify
 seek,search.v.01,1,"try to locate or discover, or try to establish the existence of",0,0,1,0,seek
+sue,action.v.01,1,institute legal proceedings against; file a suit against,0,0,0,0,sue
+accusation,accusation.n.02,1,an assertion that someone is guilty of a fault or offence,0,0,0,0,accusation
+revitalize,revitalize.v.02,1,give new life or vigor to,0,0,1,0,revitalize
+review,review.v.05,1,"look back upon (a period of time, sequence of events); remember",0,0,0,0,review
 serialize,serialize.v.01,1,arrange serially,0,0,0,0,serialize
 service,service.v.01,1,be used by; as of a utility,0,0,0,0,service
-stick,stick.v.11,1,fasten into place by fixing an end or point into something,0,0,0,0,stick
-record,read.v.08,1,indicate a certain reading; of gauges and instruments,0,0,0,0,record
+retreat,retreat.v.04,1,make a retreat from an earlier commitment or activity,0,0,0,0,retreat
 share,partake.v.02,1,"have, give, or receive a share of",0,0,0,0,share
 shoot,shoot.v.18,1,measure the altitude of by using a sextant,0,0,0,0,shoot
 show,usher.v.01,1,"take (someone) to their seats, as in theaters or auditoriums",0,0,0,0,show
 showcased,showcased,1,showcased,0,0,0,0,showcased
-steal,steal.v.03,1,steal a base,1,0,0,0,steal
 spar,spar.v.02,1,fight with spurs,0,0,0,0,spar
-retreat,retreat.v.04,1,make a retreat from an earlier commitment or activity,0,0,0,0,retreat
-sue,action.v.01,1,institute legal proceedings against; file a suit against,0,0,0,0,sue
-support,hold.v.10,1,be the physical support of; carry the weight of,0,0,0,0,support
-survive,survive.v.02,1,"continue in existence after (an adversity, etc.)",0,0,0,0,survive
+specialize,speciate.v.01,1,evolve so as to lead to a new species or develop in a way most suited to the environment,0,0,0,1,specialize
 resume,resume.v.02,1,return to a previous location or condition,0,0,0,0,resume
 resign,leave_office.v.01,1,give up or retire from a position,0,0,0,0,resign
 research,research.v.01,1,attempt to find out in a systematically and scientific manner,0,0,1,0,research
-specialize,speciate.v.01,1,evolve so as to lead to a new species or develop in a way most suited to the environment,0,0,0,1,specialize
+start,start.v.11,1,play in the starting lineup,0,0,0,0,start
+steal,steal.v.03,1,steal a base,1,0,0,0,steal
 render,try.v.08,1,melt (fat or lard) in order to separate out impurities,0,0,0,1,render
-absence,absence.n.04,1,"the occurrence of an abrupt, transient loss or impairment of consciousness (which is not subsequently remembered), sometimes with light twitching, fluttering eyelids, etc.; common in petit mal epilepsy",0,0,0,0,absence
+stick,stick.v.11,1,fasten into place by fixing an end or point into something,0,0,0,0,stick
 remove,remove.v.05,1,"shift the position or location of, as for business, legal, educational, or military purposes",0,0,0,1,remove
 relocate,relocate.v.02,1,move or establish in a new location,0,0,1,0,relocate
-telephone,call.v.03,1,get or try to get into communication (with someone) by telephone,0,0,0,0,telephone
-tenure,tenure.v.01,1,give life-time employment to,0,0,0,1,tenure
+subject,subjugate.v.02,1,make subservient; force to submit or subdue,0,0,0,0,subject
 rejoin,retort.v.01,1,answer back,0,0,0,0,rejoin
 recuse,recuse.v.02,1,"challenge or except to a judge as being incompetent or interested, in canon and civil law",1,0,0,0,recuse
 recruit,recruit.v.03,1,cause to assemble or enlist in the military,0,0,0,0,recruit
-arrival,arrival.n.02,1,the act of arriving at a certain place,0,0,1,0,arrival
+record,read.v.08,1,indicate a certain reading; of gauges and instruments,0,0,0,0,record
+reconcile,reconcile.v.03,1,come to terms,0,0,0,0,reconcile
+succumb,yield.v.13,1,consent reluctantly,0,0,0,0,succumb
+arrest,halt.v.01,1,cause to stop,0,0,0,0,arrest
 link,yoke.v.02,1,link with or as with a yoke,0,0,0,0,link
 post,post.v.08,1,ride Western style and bob up and down in the saddle in rhythm with a horse's trotting gait,0,0,0,0,post
-develop,develop.v.19,1,elaborate by the unfolding of a musical idea and by the working out of the rhythmic and harmonic changes in the theme,0,0,0,0,develop
-convince,convert.v.09,1,"make (someone) agree, understand, or realize the truth or validity of something",0,0,0,0,convince
+disappear,melt.v.06,1,become less intense and fade away gradually,0,0,0,0,disappear
 curated,curated,1,curated,0,0,1,1,curated
 defeat,get_the_better_of.v.01,1,win a victory over,0,0,0,1,defeat
 degree,degree.n.04,1,a measure for arcs and angles,0,0,0,0,degree
@@ -162,9 +161,9 @@ demand,demand.v.06,1,ask to be informed of,0,0,0,0,demand
 denounce,denounce.v.03,1,"announce the termination of, as of treaties",0,0,0,0,denounce
 departure,deviation.n.01,1,a variation that deviates from the standard or norm,0,0,0,0,departure
 depict,portray.v.02,1,make a portrait of,1,0,0,0,depict
-disappear,melt.v.06,1,become less intense and fade away gradually,0,0,0,0,disappear
-contact,reach.v.04,1,be in or establish communication with,0,0,0,0,contact
+develop,develop.v.19,1,elaborate by the unfolding of a musical idea and by the working out of the rhythmic and harmonic changes in the theme,0,0,0,0,develop
 discuss,discourse.v.01,1,to consider or examine in speech or writing,0,0,0,0,discuss
+convert,convert.v.11,1,"change in nature, purpose, or function; undergo a chemical change",0,0,0,0,convert
 dissertation,dissertation.n.01,1,a treatise advancing a new point of view resulting from research; usually a requirement for an advanced academic degree,0,0,0,0,dissertation
 donate,donate.v.01,1,give to a charity or good cause,1,0,1,1,donate
 drop,sink.v.01,1,fall or descend to a lower place or level,0,0,0,0,drop
@@ -172,21 +171,21 @@ emigrate,emigrate.v.01,1,leave one's country of residence for a new one,0,0,1,0,
 encourage,promote.v.01,1,contribute to the progress or growth of,0,0,0,0,encourage
 eventually,finally.r.01,1,after an unspecified period of time or an especially long delay,0,0,0,0,eventually
 examination,interrogation.n.03,1,formal systematic questioning,0,1,0,1,examination
-convert,convert.v.11,1,"change in nature, purpose, or function; undergo a chemical change",0,0,0,0,convert
-complaint,complaint.n.04,1,(civil law) the first pleading of the plaintiff setting out the facts on which the claim for relief is based,0,0,0,0,complaint
-experience,feel.v.01,1,undergo an emotional sensation or be in a particular state of mind,0,0,0,0,experience
-bundle,bundle.v.04,1,sleep fully clothed in the same bed with one's betrothed,0,0,0,0,bundle
+expel,oust.v.01,1,remove from a position or office,0,0,0,1,expel
+convince,convert.v.09,1,"make (someone) agree, understand, or realize the truth or validity of something",0,0,0,0,convince
+contact,reach.v.04,1,be in or establish communication with,0,0,0,0,contact
+fall,fall.v.07,1,"die, as in battle or in a hunt",0,0,0,0,fall
+bury,bury.v.03,1,place in the earth and cover with soil,0,0,0,1,bury
 associate,consort.v.01,1,keep company with; hang out with,0,0,1,1,associate
 attract,attract.v.03,1,exert a force on (a body) causing it to approach or prevent it from moving away,0,0,0,0,attract
-arrest,halt.v.01,1,cause to stop,0,0,0,0,arrest
 approach,set_about.v.01,1,begin to deal with,0,0,0,0,approach
 bestow,lend.v.01,1,bestow a quality on,0,0,0,0,bestow
 birthplace,birthplace.n.02,1,where something originated or was nurtured in its early existence,1,0,1,0,birthplace
 brief,brief.v.01,1,give essential information to someone,0,0,0,0,brief
 build,build.v.05,1,"order, supervise, or finance the construction of",0,0,1,0,build
-bury,bury.v.03,1,place in the earth and cover with soil,0,0,0,1,bury
-compile,compose.v.04,1,put together out of existing material,0,0,0,0,compile
+bundle,bundle.v.04,1,sleep fully clothed in the same bed with one's betrothed,0,0,0,0,bundle
 cash,cash.v.01,1,exchange for cash,0,0,0,0,cash
+complaint,complaint.n.04,1,(civil law) the first pleading of the plaintiff setting out the facts on which the claim for relief is based,0,0,0,0,complaint
 choose,choose.v.03,1,see fit or proper to act in a certain way; decide to act in a certain way,0,0,0,0,choose
 christen,baptize.v.01,1,administer baptism to,0,0,0,0,christen
 clear,clear.v.19,1,"settle, as of a debt",0,0,0,0,clear
@@ -194,14 +193,15 @@ co-founded,co-founded,1,co-founded,0,0,0,0,co-founded
 collect,collect.v.02,1,call for and obtain payment of,0,0,0,0,collect
 collection,solicitation.n.02,1,request for a sum of money,0,0,0,0,collection
 come,occur.v.02,1,come to one's mind; suggest itself,0,0,0,0,come
-expel,oust.v.01,1,remove from a position or office,0,0,0,1,expel
-fall,fall.v.07,1,"die, as in battle or in a hunt",0,0,0,0,fall
+compile,compose.v.04,1,put together out of existing material,0,0,0,0,compile
+experience,feel.v.01,1,undergo an emotional sensation or be in a particular state of mind,0,0,0,0,experience
+film,film.v.01,1,make a film or photograph of something,0,0,0,1,film
 place,place.v.06,1,take a place in a competition; often followed by an ordinal,0,0,1,0,place
 note,note.v.03,1,observe with care or pay close attention to,0,0,0,1,note
 able,able.s.02,1,have the skills and qualifications to do things well,0,0,0,0,able
 know,know.v.03,1,be aware of the truth of something; have a belief or faith in something; regard as true beyond any doubt,0,0,0,0,know
-allow,let.v.01,1,make it possible through a specific action or lack of action for something to happen,0,0,0,0,allow
 lie,lie.v.06,1,have a place in relation to something else,1,0,0,1,lie
+arrival,arrival.n.02,1,the act of arriving at a certain place,0,0,1,0,arrival
 adapt,adjust.v.03,1,adapt or conform oneself to new or different conditions,0,0,0,0,adapt
 migrate,migrate.v.01,1,move from one country or region to another and settle there,0,0,1,0,migrate
 action,carry_through.v.01,1,put in effect,0,0,0,0,action
@@ -218,15 +218,15 @@ performance,performance.n.03,1,the act of performing; of doing something success
 phd,ph.d..n.01,1,a doctorate usually based on at least 3 years graduate study and a dissertation; the highest degree awarded graduate study,0,0,0,0,phd
 invite,tempt.v.03,1,give rise to a desire by being attractive or inviting,0,0,0,1,invite
 introduce,introduce.v.07,1,"bring before the public for the first time, as of an actor, song, etc.",0,0,0,0,introduce
-film,film.v.01,1,make a film or photograph of something,0,0,0,1,film
-health,health.n.01,1,a healthy state of wellbeing free from disease,0,0,0,0,health
 find,find.v.13,1,perceive oneself to be in a certain condition or place,0,0,0,0,find
+health,health.n.01,1,a healthy state of wellbeing free from disease,0,0,0,0,health
 fire,fire.v.03,1,bake in a kiln so as to harden,0,0,0,0,fire
 force,pull.v.01,1,cause to move by pulling,0,0,0,0,force
 forgiveness,forgiveness.n.01,1,compassionate feelings that support a willingness to forgive,1,0,0,0,forgiveness
 form,shape.v.03,1,give shape or form to,0,0,0,1,form
 founder,founder.v.02,1,sink below the surface,0,0,0,1,founder
 fund,fund.v.03,1,provide a fund for the redemption of principal or payment of interest,0,0,0,1,fund
+allow,let.v.01,1,make it possible through a specific action or lack of action for something to happen,0,0,0,0,allow
 hail,hail.v.03,1,call for,0,0,1,0,hail
 hear,listen.v.02,1,listen and pay attention,0,0,0,1,hear
 interview,interview.v.03,1,go for an interview in the hope of being hired,0,0,0,0,interview

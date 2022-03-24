@@ -23,7 +23,7 @@ establish.v.02,7,set up or lay the groundwork for,0,0,0,6,found
 win.v.01,7,be the winner in a contest or competition; be victorious,0,0,2,2,win
 visit.v.04,7,come to see in an official or professional capacity,0,0,3,0,visit
 graduate.v.02,7,confer an academic degree upon,0,0,1,4,graduate
-grow.v.08,6,come to have or undergo a change of (physical features and attributes),0,0,1,3,"develop, get, grow, acquire, produce"
+grow.v.08,6,come to have or undergo a change of (physical features and attributes),0,0,1,3,"get, produce, develop, grow, acquire"
 return.v.14,6,return to a previous position; in mathematics,0,0,3,1,return
 station.v.01,6,assign to a station,0,0,5,0,send
 appoint.v.01,6,create and charge with a task or function,0,0,4,3,appoint
@@ -57,13 +57,13 @@ dispatch.v.02,4,complete or carry out,0,0,2,4,complete
 appoint.v.02,4,"assign a duty, responsibility or obligation to",0,0,1,4,appoint
 involve.v.06,3,occupy or engage the interest of,0,0,0,2,involve
 sport.v.01,3,wear or display in an ostentatious or proud manner,0,0,1,1,feature
-respect.v.02,3,show respect towards,0,0,1,2,"honour, honor"
+respect.v.02,3,show respect towards,0,0,1,2,"honor, honour"
 meet.v.10,3,"contend against an opponent in a sport, game, or battle",0,0,2,0,meet
 give.v.01,3,"cause to have, in the abstract sense or physical sense",0,0,0,2,give
 entrust.v.02,3,put into the care or protection of someone,0,0,1,0,leave
 include.v.03,3,"add as part of something else; put in as part of a set, group, or category",0,0,1,1,include
 marry.v.02,3,perform a marriage ceremony,0,0,0,0,marry
-air.v.03,3,"broadcast over the airwaves, as in radio or television",0,0,2,1,"send, transmit"
+air.v.03,3,"broadcast over the airwaves, as in radio or television",0,0,2,1,"transmit, send"
 submit.v.03,3,yield to the control of another,0,0,0,0,submit
 screen.v.03,3,examine in order to test suitability,0,0,2,0,screen
 succeed.v.02,3,be the successor (of),0,0,0,0,succeed
@@ -77,19 +77,19 @@ give_birth.v.01,3,cause to be born,1,0,3,0,bear
 spend.v.03,3,spend completely,1,0,1,0,spend
 touch.v.05,2,be in direct physical contact with; make contact,0,0,0,1,meet
 settle.v.07,2,become settled or established and stable in one's residence or life style,0,0,2,0,settle
-premier.v.02,2,perform a work for the first time,0,0,0,1,"premier, premiere"
+premier.v.02,2,perform a work for the first time,0,0,0,1,"premiere, premier"
 put.v.02,2,cause to be in a certain state; cause to be in a certain relation,0,0,0,0,put
 retirement.n.01,2,the state of being retired from one's business or occupation,0,0,0,0,retirement
 buy.v.01,2,obtain by purchase; acquire by means of a financial transaction,0,0,1,1,"purchase, buy"
 write.v.04,2,communicate (with) in writing,0,0,0,1,write
 organize.v.05,2,arrange by systematic planning and united effort,0,0,1,0,organize
 make.v.46,2,favor the development of,0,0,0,0,make
-unwrap.v.02,2,make known to the public information that was previously known only to a few people or that was meant to be kept a secret,0,0,0,0,"expose, discover"
+unwrap.v.02,2,make known to the public information that was previously known only to a few people or that was meant to be kept a secret,0,0,0,0,"discover, expose"
 take.v.20,2,make use of or accept for some purpose,0,0,0,0,"accept, take"
 praise.v.01,2,express approval of,0,0,0,1,praise
 choose.v.01,2,"pick out, select, or choose from a number of alternatives",0,0,0,0,select
 write.v.08,2,record data on a computer,0,0,0,0,write
-espouse.v.03,2,"take up the cause, ideology, practice, method, of someone and use it as one's own",0,1,0,0,"embrace, adopt"
+espouse.v.03,2,"take up the cause, ideology, practice, method, of someone and use it as one's own",0,1,0,0,"adopt, embrace"
 reserve.v.04,2,arrange for and reserve (something for someone else) in advance,0,0,1,1,hold
 end.v.01,2,"have an end, in a temporal, spatial, or quantitative sense; either spatial or metaphorical",0,0,0,0,finish
 admit.v.03,2,"allow participation in or the right to be part of; permit to exercise the rights, functions, and responsibilities of",0,0,0,2,include

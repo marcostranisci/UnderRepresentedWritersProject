@@ -37,7 +37,7 @@ participate.v.01,4,share in something,1,1,0,1,participate
 focus.v.02,3,cause to converge on or toward a central point,0,1,0,0,focus
 attend.v.03,3,to accompany as a circumstance or follow as a result,0,0,3,2,attend
 lend.v.01,3,bestow a quality on,0,0,1,1,"contribute, bring"
-publish.v.03,3,have (one's written work) issued for publication,0,0,0,2,"publish, write"
+publish.v.03,3,have (one's written work) issued for publication,0,0,0,2,"write, publish"
 lector.n.02,3,a public lecturer at certain universities,0,2,0,2,lecturer
 poet.n.01,3,a writer of poems (the term is usually reserved for writers of good poetry),2,0,1,0,poet
 drawing_card.n.02,3,a featured article of merchandise sold at a loss in order to draw customers,0,0,0,1,leader
@@ -52,13 +52,13 @@ provide.v.03,3,"determine (what is to happen in certain contingencies), especial
 grow.v.10,3,become attached by or as if by the process of growth,0,0,3,0,grow
 reserve.v.04,3,arrange for and reserve (something for someone else) in advance,0,0,0,1,hold
 director.n.03,3,someone who supervises the actors and directs the action in the production of a show,0,2,1,3,director
-speciate.v.01,3,evolve so as to lead to a new species or develop in a way most suited to the environment,0,0,0,0,"specialize, specialise"
+speciate.v.01,3,evolve so as to lead to a new species or develop in a way most suited to the environment,0,0,0,0,"specialise, specialize"
 subscriber.n.03,3,someone who contributes (or promises to contribute) a sum of money,0,1,0,2,contributor
 report.v.05,2,"be responsible for reporting the details of, as in journalism",0,0,1,0,cover
-keep.v.01,2,"keep in a certain state, position, or activity; e.g.,",0,0,0,1,"hold, maintain"
+keep.v.01,2,"keep in a certain state, position, or activity; e.g.,",0,0,0,1,"maintain, hold"
 celebrated.s.01,2,widely known and esteemed,0,1,0,0,famous
 think.v.03,2,"use or exercise the mind or one's power of reason in order to make inferences, decisions, or arrive at a solution or judgments",0,1,1,0,think
-cheer.v.05,2,spur on or encourage especially by cheers and shouts,1,0,0,0,"urge, inspire"
+cheer.v.05,2,spur on or encourage especially by cheers and shouts,1,0,0,0,"inspire, urge"
 co-founder,2,co-founder,0,0,1,1,co-founder
 editor_program.n.01,2,(computer science) a program designed to perform such editorial functions as rearrangement or modification or deletion of data,0,1,1,0,editor
 base.v.02,2,situate as a center of operations,0,0,2,0,base
@@ -84,7 +84,7 @@ perform.v.03,2,give a performance (of something),0,0,0,0,perform
 separate.v.12,2,come apart,0,0,0,0,part
 dedicate.v.02,2,"open to public use, as of a highway, park, or building",0,0,1,0,dedicate
 lecture.v.01,2,deliver a lecture or talk,0,0,0,1,lecture
-visualize.v.01,2,imagine; conceive of; see in one's mind,0,0,1,0,"project, figure"
+visualize.v.01,2,imagine; conceive of; see in one's mind,0,0,1,0,"figure, project"
 education.n.04,2,the profession of teaching (especially at a school or college or university),0,2,1,1,education
 recipient_role.n.01,2,the semantic role of the animate entity that is passively involved in the happening denoted by the verb in the clause,0,1,1,0,recipient
 term.v.01,2,name formally or designate with a term,0,1,0,0,term
