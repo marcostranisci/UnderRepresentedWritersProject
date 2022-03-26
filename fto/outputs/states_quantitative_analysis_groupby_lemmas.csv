@@ -6,158 +6,157 @@ teach,teach.v.02,28,accustom gradually to some action or attitude,0,6,9,15,teach
 live,live.v.02 ## live.v.07 ## survive.v.01 ## populate.v.01,21,lead a certain kind of life; live in a certain style ## pursue a positive and satisfying existence ## continue to live through hardship or adversity ## inhabit or live in; be an inhabitant of,1,1,15,1,live ## live ## live ## live
 "serve, service",service.v.01,20,be used by; as of a utility,0,0,3,11,"serve, service"
 "serve, attend",serve.v.10,19,work for or be a servant to,0,1,8,13,"serve, attend"
-spend,spend.v.01 ## spend.v.03,14,pass time in a specific way ## spend completely,0,0,5,1,spend ## spend
-hold,have.v.01 ## hold.v.22 ## reserve.v.04 ## deem.v.01 ## restrain.v.03 ## hold.v.31 ## retain.v.03,14,"have or possess, either in a concrete or an abstract sense ## hold the attention of ## arrange for and reserve (something for someone else) in advance ## keep in mind or convey as a conviction or view ## to close within bounds, limit or hold back from movement ## cover as for protection against noise or smell ## secure and keep for possible future use or application",0,0,2,11,hold ## hold ## hold ## hold ## hold ## hold ## hold
 member,member.n.04 ## member.n.01 ## penis.n.01,14,an organization that is a member of another organization (especially a state that belongs to a group of nations) ## one of the persons who compose a social group (especially individuals who have joined and participate in a group organization) ## the male organ of copulation (`member' is a euphemism),1,4,2,9,member ## member ## member
+hold,have.v.01 ## hold.v.22 ## reserve.v.04 ## deem.v.01 ## restrain.v.03 ## hold.v.31 ## retain.v.03,14,"have or possess, either in a concrete or an abstract sense ## hold the attention of ## arrange for and reserve (something for someone else) in advance ## keep in mind or convey as a conviction or view ## to close within bounds, limit or hold back from movement ## cover as for protection against noise or smell ## secure and keep for possible future use or application",0,0,2,11,hold ## hold ## hold ## hold ## hold ## hold ## hold
+spend,spend.v.01 ## spend.v.03,14,pass time in a specific way ## spend completely,0,0,5,1,spend ## spend
 writer,writer.n.02,13,a person who is able to write and has written something,1,1,4,1,writer
-raise,raise.v.23 ## recruit.v.03 ## raise.v.24,10,multiply (a number) by itself a specified number of times: 8 is 2 raised to the power 3 ## cause to assemble or enlist in the military ## bring (a surface or a design) into relief and cause to project,0,0,8,0,raise ## raise ## raise
 reside,rest.v.07,10,be inherent or innate in,0,0,10,0,reside
+raise,raise.v.23 ## recruit.v.03 ## raise.v.24,10,multiply (a number) by itself a specified number of times: 8 is 2 raised to the power 3 ## cause to assemble or enlist in the military ## bring (a surface or a design) into relief and cause to project,0,0,8,0,raise ## raise ## raise
 know,know.v.03 ## acknowledge.v.06,8,be aware of the truth of something; have a belief or faith in something; regard as true beyond any doubt ## accept (someone) to be what is claimed or accept his power and authority,0,2,1,1,know ## know
+career,career.v.01,8,move headlong at high speed,0,6,2,1,career
 grow,grow.v.10 ## grow.v.03 ## turn.v.07 ## mature.v.01,8,"become attached by or as if by the process of growth ## increase in size by natural process ## pass into a condition gradually, take on a specific property or attribute; become ## develop and reach maturity; undergo maturation",0,0,7,0,grow ## grow ## grow ## grow
 travel,travel.v.06 ## travel.v.05,8,"travel from place to place, as for the purpose of finding work, preaching, or acting as a judge ## undergo transportation as in a vehicle",0,0,5,0,travel ## travel
-career,career.v.01,8,move headlong at high speed,0,6,2,1,career
-include,admit.v.03 ## include.v.03,7,"allow participation in or the right to be part of; permit to exercise the rights, functions, and responsibilities of ## add as part of something else; put in as part of a set, group, or category",0,0,2,0,include ## include
-play,play.v.12 ## play.v.35,7,pretend to be somebody in the framework of a game or playful activity ## exhaust by allowing to pull on the line,1,0,2,2,play ## play
 author,author.v.01,7,be the author of,0,0,0,1,author
-participate,participate.v.01 ## enter.v.02,6,share in something ## become a participant; be involved in,1,1,0,1,participate ## participate
+play,play.v.12 ## play.v.35,7,pretend to be somebody in the framework of a game or playful activity ## exhaust by allowing to pull on the line,1,0,2,2,play ## play
+include,admit.v.03 ## include.v.03,7,"allow participation in or the right to be part of; permit to exercise the rights, functions, and responsibilities of ## add as part of something else; put in as part of a set, group, or category",0,0,2,0,include ## include
 attend,attend.v.03 ## attend.v.01,6,"to accompany as a circumstance or follow as a result ## be present at (meetings, church services, university), etc.",0,0,3,5,attend ## attend
+participate,participate.v.01 ## enter.v.02,6,share in something ## become a participant; be involved in,1,1,0,1,participate ## participate
 base,free-base.v.01 ## base.v.02 ## establish.v.08,6,use (purified cocaine) by burning it and inhaling the fumes ## situate as a center of operations ## use as a basis for; found on,0,0,3,0,base ## base ## base
-"saw, attend",attend.v.02,5,take charge of or deal with,0,0,2,0,"saw, attend"
 founder,founder.v.02 ## founder.v.04,5,sink below the surface ## stumble and nearly fall,0,1,3,3,founder ## founder
 publish,publish.v.02,5,prepare and issue for public distribution or sale,0,1,0,2,publish
-role,function.n.03,4,the actions and activities assigned to or required or expected of a person or group,0,0,1,1,role
-"remain, stay",stay.v.01 ## stay.v.04,4,"stay the same; remain in a certain state ## continue in a place, position, or situation",0,0,2,0,"remain, stay ## remain, stay"
-director,director.n.03 ## film_director.n.01,4,someone who supervises the actors and directs the action in the production of a show ## the person who directs the making of a film,0,3,1,4,director ## director
-receive,receive.v.12 ## welcome.v.02,4,partake of the Holy Eucharist sacrament ## bid welcome to; greet upon arrival,0,0,2,0,receive ## receive
-editor,editor_program.n.01 ## editor.n.01,4,(computer science) a program designed to perform such editorial functions as rearrangement or modification or deletion of data ## a person responsible for the editorial aspects of publication; the person who determines the final content of a text (especially of a newspaper or magazine),0,1,1,2,editor ## editor
-"produce, grow",grow.v.08,4,come to have or undergo a change of (physical features and attributes),0,1,2,1,"produce, grow"
+"saw, attend",attend.v.02,5,take charge of or deal with,0,0,2,0,"saw, attend"
 professor,professor.n.01,4,someone who is a member of the faculty at a college or university,0,1,0,2,professor
-contributor,subscriber.n.03,3,someone who contributes (or promises to contribute) a sum of money,0,1,0,2,contributor
-"contribute, bring",lend.v.01,3,bestow a quality on,0,0,1,1,"contribute, bring"
-develop,develop.v.19 ## develop.v.21,3,elaborate by the unfolding of a musical idea and by the working out of the rhythmic and harmonic changes in the theme ## expand in the form of a series,0,0,1,0,develop ## develop
-tenure,tenure.v.01,3,give life-time employment to,0,0,0,1,tenure
-leader,drawing_card.n.02,3,a featured article of merchandise sold at a loss in order to draw customers,0,0,0,1,leader
-take,take.v.29 ## carry.v.02,3,be seized or affected in a specified way ## have with oneself; have on one's person,0,0,1,0,take ## take
-train,train.v.02 ## train.v.09,3,"undergo training or instruction in preparation for a particular role, function, or profession ## cause to grow in a certain way by tying and pruning it",0,1,1,0,train ## train
-poet,poet.n.01,3,a writer of poems (the term is usually reserved for writers of good poetry),2,0,1,0,poet
+receive,receive.v.12 ## welcome.v.02,4,partake of the Holy Eucharist sacrament ## bid welcome to; greet upon arrival,0,0,2,0,receive ## receive
+"remain, stay",stay.v.01 ## stay.v.04,4,"stay the same; remain in a certain state ## continue in a place, position, or situation",0,0,2,0,"remain, stay ## remain, stay"
+editor,editor_program.n.01 ## editor.n.01,4,(computer science) a program designed to perform such editorial functions as rearrangement or modification or deletion of data ## a person responsible for the editorial aspects of publication; the person who determines the final content of a text (especially of a newspaper or magazine),0,1,1,2,editor ## editor
+role,function.n.03,4,the actions and activities assigned to or required or expected of a person or group,0,0,1,1,role
+"grow, produce",grow.v.08,4,come to have or undergo a change of (physical features and attributes),0,1,2,1,"grow, produce"
+director,director.n.03 ## film_director.n.01,4,someone who supervises the actors and directs the action in the production of a show ## the person who directs the making of a film,0,3,1,4,director ## director
 president,president_of_the_united_states.n.02 ## president.n.04,3,the office of the United States head of state ## the officer who presides at the meetings of an organization,0,0,1,2,president ## president
+poet,poet.n.01,3,a writer of poems (the term is usually reserved for writers of good poetry),2,0,1,0,poet
+leader,drawing_card.n.02,3,a featured article of merchandise sold at a loss in order to draw customers,0,0,0,1,leader
+contributor,subscriber.n.03,3,someone who contributes (or promises to contribute) a sum of money,0,1,0,2,contributor
 lecturer,lector.n.02,3,a public lecturer at certain universities,0,2,0,2,lecturer
+develop,develop.v.19 ## develop.v.21,3,elaborate by the unfolding of a musical idea and by the working out of the rhythmic and harmonic changes in the theme ## expand in the form of a series,0,0,1,0,develop ## develop
+"write, publish",publish.v.03,3,have (one's written work) issued for publication,0,0,0,2,"write, publish"
+"contribute, bring",lend.v.01,3,bestow a quality on,0,0,1,1,"contribute, bring"
+tenure,tenure.v.01,3,give life-time employment to,0,0,0,1,tenure
 provide,provide.v.03,3,"determine (what is to happen in certain contingencies), especially by including a proviso condition or stipulation",0,0,0,0,provide
 respect,respect.v.02 ## respect.v.01,3,show respect towards ## regard highly; think much of,0,1,0,0,respect ## respect
-"write, publish",publish.v.03,3,have (one's written work) issued for publication,0,0,0,2,"write, publish"
-associate,consort.v.01,3,keep company with; hang out with,0,0,0,1,associate
-"specialise, specialize",speciate.v.01,3,evolve so as to lead to a new species or develop in a way most suited to the environment,0,0,0,0,"specialise, specialize"
+train,train.v.02 ## train.v.09,3,"undergo training or instruction in preparation for a particular role, function, or profession ## cause to grow in a certain way by tying and pruning it",0,1,1,0,train ## train
+"specialize, specialise",speciate.v.01,3,evolve so as to lead to a new species or develop in a way most suited to the environment,0,0,0,0,"specialize, specialise"
 focus,focus.v.02,3,cause to converge on or toward a central point,0,1,0,0,focus
 education,education.n.04 ## department_of_education.n.01,3,the profession of teaching (especially at a school or college or university) ## the United States federal department that administers all federal programs dealing with education (including federal aid to educational institutions and students); created 1979,0,3,2,1,education ## education
-lecture,lecture.v.01,2,deliver a lecture or talk,0,0,0,1,lecture
-term,term.v.01,2,name formally or designate with a term,0,1,0,0,term
-"figure, project",visualize.v.01,2,imagine; conceive of; see in one's mind,0,0,1,0,"figure, project"
+associate,consort.v.01,3,keep company with; hang out with,0,0,0,1,associate
+take,take.v.29 ## carry.v.02,3,be seized or affected in a specified way ## have with oneself; have on one's person,0,0,1,0,take ## take
+"hold, maintain",keep.v.01,2,"keep in a certain state, position, or activity; e.g.,",0,0,0,1,"hold, maintain"
 finalist,finalist.n.01,2,a contestant who reaches the final stages of a competition,0,0,1,1,finalist
-time,clock.v.01 ## time.v.05,2,measure the time or duration of an event or action or the person who performs an action in a certain period of time ## adjust so that a force is applied and an action occurs at the desired time,0,0,1,0,time ## time
-"inspire, urge",cheer.v.05,2,spur on or encourage especially by cheers and shouts,1,0,0,0,"inspire, urge"
-think,think.v.03,2,"use or exercise the mind or one's power of reason in order to make inferences, decisions, or arrive at a solution or judgments",0,1,1,0,think
-help,help.v.06,2,contribute to the furtherance of,0,0,0,0,help
-give,give.v.43 ## move_over.v.01,2,consent to engage in sexual intercourse with a man ## move in order to make room for someone for something,0,0,0,0,give ## give
-set,typeset.v.01 ## set.v.08,2,set in type ## set to a certain position or cause to operate correctly,0,0,0,1,set ## set
-part,separate.v.12,2,come apart,0,0,0,0,part
-"maintain, hold",keep.v.01,2,"keep in a certain state, position, or activity; e.g.,",0,0,0,1,"maintain, hold"
 manage,manage.v.02,2,"be in charge of, act on, or dispose of",0,0,1,0,manage
-masterpiece,masterpiece.n.01,2,the most outstanding work of a creative artist or craftsman,2,0,0,0,masterpiece
-teacher,teacher.n.02 ## teacher.n.01,2,a personified abstraction that teaches ## a person whose occupation is teaching,0,0,1,0,teacher ## teacher
-offer,offer.v.09,2,present as an act of worship,0,0,1,1,offer
-run,run.v.33,2,run with the ball; in such sports as football,0,0,1,0,run
-perform,perform.v.03,2,give a performance (of something),0,0,0,0,perform
-pioneer,initiate.v.02,2,take the lead or initiative in; participate in the development of,1,0,0,0,pioneer
-student,scholar.n.01,2,a learned person (especially in the humanities); someone who by long study has gained mastery in one or more disciplines,0,0,0,1,student
-promote,promote.v.01 ## promote.v.05,2,"contribute to the progress or growth of ## change a pawn for a better piece by advancing it to the eighth row, or change a checker piece for a more valuable piece by moving it to the row closest to your opponent",0,0,1,0,promote ## promote
-famous,celebrated.s.01,2,widely known and esteemed,0,1,0,0,famous
+lecture,lecture.v.01,2,deliver a lecture or talk,0,0,0,1,lecture
+give,give.v.43 ## move_over.v.01,2,consent to engage in sexual intercourse with a man ## move in order to make room for someone for something,0,0,0,0,give ## give
+help,help.v.06,2,contribute to the furtherance of,0,0,0,0,help
 pursue,quest_for.v.01,2,go in search of or hunt for,0,0,1,0,pursue
-read,read.v.10,2,to hear and understand,0,0,0,0,read
-recipient,recipient_role.n.01,2,the semantic role of the animate entity that is passively involved in the happening denoted by the verb in the clause,0,1,1,0,recipient
+masterpiece,masterpiece.n.01,2,the most outstanding work of a creative artist or craftsman,2,0,0,0,masterpiece
+offer,offer.v.09,2,present as an act of worship,0,0,1,1,offer
+"urge, inspire",cheer.v.05,2,spur on or encourage especially by cheers and shouts,1,0,0,0,"urge, inspire"
+time,clock.v.01 ## time.v.05,2,measure the time or duration of an event or action or the person who performs an action in a certain period of time ## adjust so that a force is applied and an action occurs at the desired time,0,0,1,0,time ## time
+think,think.v.03,2,"use or exercise the mind or one's power of reason in order to make inferences, decisions, or arrive at a solution or judgments",0,1,1,0,think
+term,term.v.01,2,name formally or designate with a term,0,1,0,0,term
+teacher,teacher.n.02 ## teacher.n.01,2,a personified abstraction that teaches ## a person whose occupation is teaching,0,0,1,0,teacher ## teacher
+student,scholar.n.01,2,a learned person (especially in the humanities); someone who by long study has gained mastery in one or more disciplines,0,0,0,1,student
+set,typeset.v.01 ## set.v.08,2,set in type ## set to a certain position or cause to operate correctly,0,0,0,1,set ## set
+run,run.v.33,2,run with the ball; in such sports as football,0,0,1,0,run
 record,record.v.04 ## record.v.01,2,be aware of ## make a record of; set down in permanent form,0,0,0,0,record ## record
+recipient,recipient_role.n.01,2,the semantic role of the animate entity that is passively involved in the happening denoted by the verb in the clause,0,1,1,0,recipient
+read,read.v.10,2,to hear and understand,0,0,0,0,read
+famous,celebrated.s.01,2,widely known and esteemed,0,1,0,0,famous
+promote,promote.v.01 ## promote.v.05,2,"contribute to the progress or growth of ## change a pawn for a better piece by advancing it to the eighth row, or change a checker piece for a more valuable piece by moving it to the row closest to your opponent",0,0,1,0,promote ## promote
+"project, figure",visualize.v.01,2,imagine; conceive of; see in one's mind,0,0,1,0,"project, figure"
+pioneer,initiate.v.02,2,take the lead or initiative in; participate in the development of,1,0,0,0,pioneer
+perform,perform.v.03,2,give a performance (of something),0,0,0,0,perform
+part,separate.v.12,2,come apart,0,0,0,0,part
 fellowship,fellowship.n.03 ## company.n.03,2,money granted (by a university or foundation or other agency) for advanced study or research ## the state of being with someone,0,0,0,1,fellowship ## fellowship
 journalist,journalist.n.01,2,a writer for newspapers and magazines,0,0,0,1,journalist
 familiar,familiar.n.03,2,a spirit (usually in animal form) that acts as an assistant to a witch or wizard,1,0,0,0,familiar
 educate,train.v.01 ## educate.v.03,2,create by training and teaching ## teach or refine to be discriminative in taste or judgment,0,0,1,0,educate ## educate
-columnist,columnist.n.01,2,a journalist who writes editorials,0,0,0,2,columnist
-co-founder,co-founder,2,co-founder,0,0,1,1,co-founder
-cover,report.v.05,2,"be responsible for reporting the details of, as in journalism",0,0,1,0,cover
-deal,deal.v.09 ## cover.v.05,2,distribute cards to the players in a game ## act on verbally or in some form of artistic expression,0,0,0,0,deal ## deal
-dedicate,dedicate.v.02,2,"open to public use, as of a highway, park, or building",0,0,1,0,dedicate
 call,call.v.22 ## call.v.02,2,lure by imitating the characteristic call of an animal ## ascribe a quality to or give a name of a common noun that reflects a quality,0,0,0,1,call ## call
-commentator,observer.n.02 ## commentator.n.02,2,an expert who observes and comments on something ## a writer who reports and analyzes events of the day,0,1,1,0,commentator ## commentator
+dedicate,dedicate.v.02,2,"open to public use, as of a highway, park, or building",0,0,1,0,dedicate
+deal,deal.v.09 ## cover.v.05,2,distribute cards to the players in a game ## act on verbally or in some form of artistic expression,0,0,0,0,deal ## deal
+cover,report.v.05,2,"be responsible for reporting the details of, as in journalism",0,0,1,0,cover
+co-founder,co-founder,2,co-founder,0,0,1,1,co-founder
+columnist,columnist.n.01,2,a journalist who writes editorials,0,0,0,2,columnist
 act,act.v.10 ## act.v.08,2,"perform on a stage or theater ## be engaged in an activity, often for no particular purpose other than pleasure",0,1,1,0,act ## act
-researcher,research_worker.n.01,1,a scientist who devotes himself to doing research,0,0,1,1,researcher
-upbringing,breeding.n.03,1,helping someone grow up to be an accepted member of the community,0,0,1,0,upbringing
+commentator,observer.n.02 ## commentator.n.02,2,an expert who observes and comments on something ## a writer who reports and analyzes events of the day,0,1,1,0,commentator ## commentator
+rector,curate.n.01,1,a person authorized to conduct religious worship,0,1,0,1,rector
+servant,servant.n.01,1,a person working in the service of another (especially in the household),0,0,0,0,servant
+secretary,secretary.n.02,1,an assistant who handles correspondence and clerical work for a boss or an organization,0,0,0,1,secretary
+school,school.v.03,1,swim in or form a large group of fish,0,1,0,1,school
+scholarship,scholarship.n.01,1,financial aid provided to a student on the basis of academic merit,0,0,1,1,scholarship
 scholar,learner.n.01,1,someone (especially a child) who learns (as from a teacher) or takes up knowledge or beliefs,0,0,0,0,scholar
-celebration,celebration.n.03,1,the public performance of a sacrament or solemn ceremony with all appropriate ritual,0,0,0,0,celebration
 chair,chair.v.01,1,"act or preside as chair, as of an academic department in a university",0,0,0,1,chair
-room,board.v.02,1,live and take one's meals at or in,0,0,0,0,room
 childhood,childhood.n.02,1,the state of a child between infancy and adolescence,0,0,1,0,childhood
+room,board.v.02,1,live and take one's meals at or in,0,0,0,0,room
+chronicle,chronicle.v.01,1,record in chronological order; make a historical record,0,0,0,0,chronicle
 reveler,reveler.n.01,1,a celebrant who shares in a noisy party,0,0,1,0,reveler
 responsible,responsible.a.01,1,worthy of or requiring responsibility or trust; or held accountable,0,0,0,0,responsible
-visit,visit.v.08,1,assail,0,0,1,0,visit
-chronicle,chronicle.v.01,1,record in chronological order; make a historical record,0,0,0,0,chronicle
+collaboration,collaboration.n.02,1,act of cooperating traitorously with an enemy that is occupying your country,0,0,0,0,collaboration
+circulate,circulate.v.06,1,cause to move in a circuit or system,0,0,1,0,circulate
 resist,defy.v.02,1,"elude, especially in a baffling way",0,0,0,0,resist
 residence,residency.n.01,1,the act of dwelling in a place,0,0,1,0,residence
-circulate,circulate.v.06,1,cause to move in a circuit or system,0,0,1,0,circulate
+carry,impart.v.03,1,transmit or serve as the medium for transmission,0,0,1,1,carry
+researcher,research_worker.n.01,1,a scientist who devotes himself to doing research,0,0,1,1,researcher
 research,research.v.01,1,attempt to find out in a systematically and scientific manner,0,1,0,1,research
-school,school.v.03,1,swim in or form a large group of fish,0,1,0,1,school
-activist,activist.s.01,1,advocating or engaged in activism,0,1,0,0,activist
+collection,solicitation.n.02,1,request for a sum of money,0,0,0,0,collection
 represent,represent.v.04,1,"be a delegate or spokesperson for; represent somebody's interest or be a proxy or substitute for, as of politicians and office holders representing their constituents, or of a tenant representing other tenants in a housing dispute",0,0,0,0,represent
-active,active.a.11,1,(used of verbs (e.g. `to run') and participial adjectives (e.g. `running' in `running water')) expressing action rather than a state of being,0,0,0,1,active
+collaborator,collaborator.n.03,1,an associate in an activity or endeavor or sphere of common interest,0,0,0,0,collaborator
+co-winner,co-winner,1,co-winner,0,0,0,1,co-winner
 release,unblock.v.03,1,make (assets) available,1,0,1,0,release
 relationship,relationship.n.01,1,"a relation between people; (`relationship' is often used where `relation' would serve, as in `the relationship between inflation and unemployment', but the preferred usage of `relationship' is for human relations or states of relatedness)",0,1,0,0,relationship
 refer,refer.v.03,1,"think of, regard, or classify under a subsuming principle or with a general group or in relation to another",0,0,0,0,refer
-rector,curate.n.01,1,a person authorized to conduct religious worship,0,1,0,1,rector
-co-winner,co-winner,1,co-winner,0,0,0,1,co-winner
-collaboration,collaboration.n.02,1,act of cooperating traitorously with an enemy that is occupying your country,0,0,0,0,collaboration
-collaborator,collaborator.n.03,1,an associate in an activity or endeavor or sphere of common interest,0,0,0,0,collaborator
-collection,solicitation.n.02,1,request for a sum of money,0,0,0,0,collection
-queen,queen.v.01,1,"promote to a queen, as of a pawn in chess",1,0,0,0,queen
-scholarship,scholarship.n.01,1,financial aid provided to a student on the basis of academic merit,0,0,1,1,scholarship
-try,judge.v.05,1,put on trial or hear a case and sit as the judge at the trial of,0,0,0,0,try
+celebration,celebration.n.03,1,the public performance of a sacrament or solemn ceremony with all appropriate ritual,0,0,0,0,celebration
+show,usher.v.01,1,"take (someone) to their seats, as in theaters or auditoriums",1,0,0,0,show
+candidate,campaigner.n.01,1,a politician who is running for public office,0,0,0,1,candidate
+ally,ally.v.01,1,"become an ally or associate, as by a treaty or marriage",1,0,0,0,ally
+active,active.a.11,1,(used of verbs (e.g. `to run') and participial adjectives (e.g. `running' in `running water')) expressing action rather than a state of being,0,0,0,1,active
+activist,activist.s.01,1,advocating or engaged in activism,0,1,0,0,activist
+visit,visit.v.08,1,assail,0,0,1,0,visit
 activity,activity.n.04,1,(chemistry) the capacity of a substance to take part in a chemical reaction,0,0,0,1,activity
-successful,successful.a.01,1,having succeeded or being marked by a favorable outcome,0,0,0,0,successful
+upbringing,breeding.n.03,1,helping someone grow up to be an accepted member of the community,0,0,1,0,upbringing
+undergraduate,undergraduate.n.01,1,a university student who has not yet received a first degree,0,0,0,1,undergraduate
+try,judge.v.05,1,put on trial or hear a case and sit as the judge at the trial of,0,0,0,0,try
+administer,distribute.v.01,1,"administer or bestow, as in small portions",0,0,0,1,administer
 translator,translator.n.03,1,a program that translates one programming language into another,0,0,1,0,translator
 translate,translate.v.09,1,"express, as in simple and less technical language",0,0,0,0,translate
-administer,distribute.v.01,1,"administer or bestow, as in small portions",0,0,0,1,administer
-undergraduate,undergraduate.n.01,1,a university student who has not yet received a first degree,0,0,0,1,undergraduate
 administrator,administrator.n.02,1,the party appointed by a probate court to distribute the estate of someone who dies without a will or without naming an executor,0,0,1,0,administrator
 advocacy,advocacy.n.01,1,active support of an idea or cause etc.; especially the act of pleading or arguing for something,0,0,0,0,advocacy
 affiliation,affiliation.n.02,1,the act of becoming formally connected or joined,0,0,0,1,affiliation
 agent,agent.n.05,1,any agent or representative of a federal agency or bureau,0,0,0,0,agent
-ally,ally.v.01,1,"become an ally or associate, as by a treaty or marriage",1,0,0,0,ally
 also,besides.r.02,1,in addition,0,0,1,0,also
-talent,talent.n.02,1,a person who possesses unusual innate ability in some field or activity,0,0,0,0,talent
+compile,compose.v.04,1,put together out of existing material,0,0,0,0,compile
 amass,roll_up.v.02,1,get or gather together,0,0,1,0,amass
-suffer,suffer.v.10,1,undergo or suffer,1,0,0,0,suffer
-subnormal,subnormal.s.01,1,below normal or average,0,0,0,0,subnormal
-servant,servant.n.01,1,a person working in the service of another (especially in the household),0,0,0,0,servant
+talent,talent.n.02,1,a person who possesses unusual innate ability in some field or activity,0,0,0,0,talent
 appear,appear.v.06,1,"appear as a character on stage or appear in a play, etc.",0,0,0,1,appear
+suffer,suffer.v.10,1,undergo or suffer,1,0,0,0,suffer
+successful,successful.a.01,1,having succeeded or being marked by a favorable outcome,0,0,0,0,successful
+subnormal,subnormal.s.01,1,below normal or average,0,0,0,0,subnormal
 assess,tax.v.02,1,set or determine the amount of (a payment such as a fine),0,0,0,0,assess
+authority,authority.n.01,1,the power or right to give orders or make decisions,1,0,0,0,authority
 structure,structure.v.01,1,give a structure to,0,0,0,0,structure
 spread,spread.v.10,1,distribute over a surface in a layer,0,0,0,0,spread
-authority,authority.n.01,1,the power or right to give orders or make decisions,1,0,0,0,authority
 bootleg,bootleg.v.01,1,sell illicit products such as drugs or alcohol,0,1,1,0,bootleg
 speaker,speaker.n.03,1,the presiding officer of a deliberative assembly,0,0,1,0,speaker
 son,son.n.02,1,the divine word of God; the second person in the Trinity (incarnate in Jesus),0,0,0,0,son
 sit,sit.v.10,1,serve in a specific professional capacity,0,0,0,0,sit
-show,usher.v.01,1,"take (someone) to their seats, as in theaters or auditoriums",1,0,0,0,show
-compile,compose.v.04,1,put together out of existing material,0,0,0,0,compile
-candidate,campaigner.n.01,1,a politician who is running for public office,0,0,0,1,candidate
-carry,impart.v.03,1,transmit or serve as the medium for transmission,0,0,1,1,carry
-secretary,secretary.n.02,1,an assistant who handles correspondence and clerical work for a boss or an organization,0,0,0,1,secretary
+queen,queen.v.01,1,"promote to a queen, as of a pawn in chess",1,0,0,0,queen
 construction,structure.n.01,1,a thing constructed; a complex entity constructed of many parts,0,0,0,0,construction
-provost,provost.n.01,1,a high-ranking university administrator,0,1,0,0,provost
+conduct,conduct.v.06,1,lead musicians in the performance of,0,0,1,1,conduct
 economist,economist.n.01,1,an expert in the science of economics,0,0,1,1,economist
 dislike,dislike.v.01,1,have or feel a dislike or distaste for,1,0,0,0,dislike
 dispute,quarrel.v.01,1,have a disagreement over something,0,1,0,0,dispute
 academic,academic.s.02,1,hypothetical or theoretical and not expected to produce an immediate or practical result,0,0,0,0,academic
-draw,draw.v.06,1,"represent by making a drawing of, as with a pencil, chalk, etc. on a surface",0,0,0,0,draw
 inspector,inspector.n.01,1,a high ranking police officer,0,1,1,0,inspector
 influence,charm.v.04,1,induce into action by using one's charm,0,0,0,0,influence
-duty,duty.n.01,1,the social force that binds you to the courses of action demanded by that force; ; - John D.Rockefeller Jr,0,0,0,0,duty
+draw,draw.v.06,1,"represent by making a drawing of, as with a pencil, chalk, etc. on a surface",0,0,0,0,draw
 incline,incline.v.02,1,bend or turn (one's ear) towards a speaker in order to listen well,0,0,0,0,incline
 imprison,imprison.v.02,1,confine as if in a prison,0,0,0,0,imprison
 important,crucial.a.01,1,of extreme importance; vital to the resolution of a crisis,1,0,0,0,important
@@ -165,16 +164,17 @@ illuminate,illuminate.v.03,1,add embellishments and paintings to (medieval manus
 humorist,humorist.n.01,1,someone who acts speaks or writes in an amusing way,0,0,0,0,humorist
 host,host.v.01,1,be the host of or for,1,0,0,1,host
 honor,honor.v.03,1,accept as pay,0,0,0,0,honor
+duty,duty.n.01,1,the social force that binds you to the courses of action demanded by that force; ; - John D.Rockefeller Jr,0,0,0,0,duty
 edit,edit.v.03,1,cut and assemble the components of,0,0,0,0,edit
 dialogue,dialogue.n.03,1,a literary composition in the form of a conversation between two people,0,1,0,0,dialogue
 head,head.v.09,1,remove the head of,0,0,0,1,head
 hairdresser,hairdresser.n.01,1,someone who cuts or beautifies hair,0,0,1,0,hairdresser
 guest,guest.n.03,1,a customer of a hotel or restaurant etc.,0,0,0,0,guest
 enjoy,enjoy.v.01,1,derive or receive pleasure from; get enjoyment from; take pleasure in,0,0,0,0,enjoy
+enlist,enlist.v.03,1,engage somebody to enter the army,0,0,0,0,enlist
 get,suffer.v.02,1,undergo (as of injuries and illnesses),0,0,0,1,get
 friend,friend.n.05,1,a member of the Religious Society of Friends founded by George Fox (the Friends have never called themselves Quakers),0,1,0,0,friend
 freedom,freedom.n.01,1,the condition of being free; the power to act or speak or think without externally imposed restraints,0,0,0,0,freedom
-enlist,enlist.v.03,1,engage somebody to enter the army,0,0,0,0,enlist
 entitle,ennoble.v.02,1,give a title to someone; make someone a member of the nobility,0,0,0,0,entitle
 equate,equate.v.02,1,"be equivalent or parallel, in mathematics",0,0,0,0,equate
 establish,prove.v.02,1,"establish the validity of something, as by an example, explanation or experiment",0,0,1,0,establish
@@ -183,36 +183,36 @@ felt,feel.v.13,1,pass one's hands over the sexual organs of,0,0,0,0,felt
 face,face.v.05,1,turn so as to face; turn the face in a certain direction,0,0,0,0,face
 direct,conduct.v.02,1,"lead, as in the performance of a composition",0,0,0,0,direct
 let,let.v.01,1,make it possible through a specific action or lack of action for something to happen,0,0,0,0,let
-conduct,conduct.v.06,1,lead musicians in the performance of,0,0,1,1,conduct
-period,period.n.07,1,a punctuation mark (.) placed at the end of a declarative sentence to indicate a full stop or after abbreviations,0,0,0,0,period
+provost,provost.n.01,1,a high-ranking university administrator,0,1,0,0,provost
+pick,pick.v.10,1,"attack with or as if with a pickaxe of ice or rocky ground, for example",1,0,0,0,pick
 fan,fan.v.01,1,"strike out (a batter), (of a pitcher)",0,1,0,0,fan
 consultant,adviser.n.01,1,an expert who gives advice,0,0,1,1,consultant
-production,production.n.04,1,(law) the act of exhibiting in a court of law,0,0,0,0,production
 cooperate,collaborate.v.01,1,work together on a common enterprise of project,0,0,0,0,cooperate
 correct,discipline.v.02,1,punish in order to gain control or enforce obedience,0,0,0,0,correct
+production,production.n.04,1,(law) the act of exhibiting in a court of law,0,0,0,0,production
+correspondent,correspondent.n.02,1,a journalist employed to provide news stories for newspapers or broadcast media,0,0,0,1,correspondent
 premiere,premier.v.02,1,perform a work for the first time,0,0,0,0,premiere
 preach,preach.v.02,1,"speak, plead, or argue in favor of",0,0,1,0,preach
 practise,practice.v.01,1,carry out or practice; as of jobs and professions,0,0,0,0,practise
 position,position.v.01,1,"cause to be in an appropriate place, state, or relation",0,0,0,0,position
 portrait,portrayal.n.01,1,a word picture of a person's appearance and character,1,0,0,0,portrait
-correspondent,correspondent.n.02,1,a journalist employed to provide news stories for newspapers or broadcast media,0,0,0,1,correspondent
 player,player.n.05,1,an important participant (as in a business deal),0,1,0,0,player
 create,create.v.04,1,"invest with a new title, office, or rank",0,0,0,1,create
-pick,pick.v.10,1,"attack with or as if with a pickaxe of ice or rocky ground, for example",1,0,0,0,pick
-performer,performer.n.01,1,an entertainer who performs a dramatic or musical work for an audience,0,0,1,0,performer
-life,liveliness.n.02,1,animation and energy in action or expression,0,0,1,0,life
 critic,critic.n.01,1,a person who is professionally engaged in the analysis and interpretation of works of art,1,0,0,0,critic
+period,period.n.07,1,a punctuation mark (.) placed at the end of a declarative sentence to indicate a full stop or after abbreviations,0,0,0,0,period
+life,liveliness.n.02,1,animation and energy in action or expression,0,0,1,0,life
+performer,performer.n.01,1,an entertainer who performs a dramatic or musical work for an audience,0,0,1,0,performer
 pastor,pastor.n.02,1,only the rose-colored starlings; in some classifications considered a separate genus,0,1,0,1,pastor
 debater,debater.n.01,1,someone who engages in debate,0,0,0,1,debater
-organize,unionize.v.02,1,form or join a union,0,0,0,1,organize
 decade,ten.n.01,1,the cardinal number that is the sum of nine and one; the base of the decimal system,0,0,0,0,decade
+organize,unionize.v.02,1,form or join a union,0,0,0,1,organize
 novelist,novelist.n.01,1,one who writes novels,0,0,0,0,novelist
 native,native.a.03,1,characteristic of or relating to people inhabiting a region from the beginning,0,0,1,0,native
 name,list.v.01,1,give or make a list of; name individually; give the names of,1,0,0,0,name
 model,model.v.03,1,assume a posture as for artistic purposes,0,1,0,1,model
 defend,defend.v.06,1,be the defense counsel for someone in a trial,0,0,0,0,defend
-martyr,martyr.v.02,1,torture and torment like a martyr,0,0,0,0,martyr
 degree,academic_degree.n.01,1,an award conferred by a college or university signifying that the recipient has satisfactorily completed a course of study,0,1,0,1,degree
+martyr,martyr.v.02,1,torture and torment like a martyr,0,0,0,0,martyr
 designer,interior_designer.n.01,1,a person who specializes in designing architectural interiors and their furnishings,0,0,0,0,designer
 determine,determine.v.06,1,fix in scope; fix the boundaries of,0,0,0,0,determine
 able,able.s.02,1,have the skills and qualifications to do things well,0,0,0,0,able

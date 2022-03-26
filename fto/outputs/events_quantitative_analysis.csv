@@ -7,7 +7,7 @@ die.v.08,17,"to be on base at the end of an inning, of a player",0,0,12,1,die
 spell.v.03,16,write or name the letters that comprise the conventionally accepted form of (a word or part of a word),1,0,0,4,write
 publish.v.02,15,prepare and issue for public distribution or sale,0,0,7,8,publish
 graduate.v.01,14,receive an academic degree upon completion of one's studies,0,0,5,11,graduate
-receive.v.02,13,receive a specified treatment (abstract),0,0,2,9,"receive, obtain"
+receive.v.02,13,receive a specified treatment (abstract),0,0,2,9,"obtain, receive"
 establish.v.08,11,use as a basis for; found on,0,0,2,5,found
 take.v.34,10,"to get into a position of having, e.g., safety, comfort",0,0,4,5,take
 prove.v.02,10,"establish the validity of something, as by an example, explanation or experiment",0,0,2,6,establish
@@ -23,7 +23,7 @@ establish.v.02,7,set up or lay the groundwork for,0,0,0,6,found
 win.v.01,7,be the winner in a contest or competition; be victorious,0,0,2,2,win
 visit.v.04,7,come to see in an official or professional capacity,0,0,3,0,visit
 graduate.v.02,7,confer an academic degree upon,0,0,1,4,graduate
-grow.v.08,6,come to have or undergo a change of (physical features and attributes),0,0,1,3,"get, produce, develop, grow, acquire"
+grow.v.08,6,come to have or undergo a change of (physical features and attributes),0,0,1,3,"produce, develop, get, acquire, grow"
 return.v.14,6,return to a previous position; in mathematics,0,0,3,1,return
 station.v.01,6,assign to a station,0,0,5,0,send
 appoint.v.01,6,create and charge with a task or function,0,0,4,3,appoint
@@ -35,13 +35,13 @@ hold.v.14,6,support or hold in a certain manner,0,0,5,0,bear
 death.n.06,6,the personification of death,0,0,0,0,death
 enter.v.02,6,become a participant; be involved in,0,0,2,3,participate
 leave.v.03,6,act or be so as to become in a specified state,0,0,2,1,leave
-conduct.v.02,5,"lead, as in the performance of a composition",0,0,0,1,"lead, conduct"
+conduct.v.02,5,"lead, as in the performance of a composition",0,0,0,1,"conduct, lead"
 elect.v.02,5,choose,0,0,0,4,elect
 elect.v.01,5,select by a vote for an office or membership,0,0,1,4,elect
 spend.v.01,5,pass time in a specific way,0,0,4,1,spend
 leave.v.11,5,have left or have as a remainder,0,0,2,1,leave
 make.v.42,5,"represent fictitiously, as in a play, or pretend to be or act like",0,0,2,1,"pretend, make"
-receive.v.05,5,express willingness to have in one's home or environs,0,1,1,1,"receive, invite"
+receive.v.05,5,express willingness to have in one's home or environs,0,1,1,1,"invite, receive"
 translate.v.08,5,subject to movement in which every part of the body moves parallel to and the same distance as every other point on the body,0,0,0,0,translate
 receive.v.10,5,have or give a reception,0,0,0,3,receive
 release.v.09,4,release (gas or energy) as a result of a chemical reaction or physical decomposition,1,0,0,1,release
@@ -57,7 +57,7 @@ dispatch.v.02,4,complete or carry out,0,0,2,4,complete
 appoint.v.02,4,"assign a duty, responsibility or obligation to",0,0,1,4,appoint
 involve.v.06,3,occupy or engage the interest of,0,0,0,2,involve
 sport.v.01,3,wear or display in an ostentatious or proud manner,0,0,1,1,feature
-respect.v.02,3,show respect towards,0,0,1,2,"honor, honour"
+respect.v.02,3,show respect towards,0,0,1,2,"honour, honor"
 meet.v.10,3,"contend against an opponent in a sport, game, or battle",0,0,2,0,meet
 give.v.01,3,"cause to have, in the abstract sense or physical sense",0,0,0,2,give
 entrust.v.02,3,put into the care or protection of someone,0,0,1,0,leave
@@ -84,12 +84,12 @@ buy.v.01,2,obtain by purchase; acquire by means of a financial transaction,0,0,1
 write.v.04,2,communicate (with) in writing,0,0,0,1,write
 organize.v.05,2,arrange by systematic planning and united effort,0,0,1,0,organize
 make.v.46,2,favor the development of,0,0,0,0,make
-unwrap.v.02,2,make known to the public information that was previously known only to a few people or that was meant to be kept a secret,0,0,0,0,"discover, expose"
+unwrap.v.02,2,make known to the public information that was previously known only to a few people or that was meant to be kept a secret,0,0,0,0,"expose, discover"
 take.v.20,2,make use of or accept for some purpose,0,0,0,0,"accept, take"
 praise.v.01,2,express approval of,0,0,0,1,praise
 choose.v.01,2,"pick out, select, or choose from a number of alternatives",0,0,0,0,select
 write.v.08,2,record data on a computer,0,0,0,0,write
-espouse.v.03,2,"take up the cause, ideology, practice, method, of someone and use it as one's own",0,1,0,0,"adopt, embrace"
+espouse.v.03,2,"take up the cause, ideology, practice, method, of someone and use it as one's own",0,1,0,0,"embrace, adopt"
 reserve.v.04,2,arrange for and reserve (something for someone else) in advance,0,0,1,1,hold
 end.v.01,2,"have an end, in a temporal, spatial, or quantitative sense; either spatial or metaphorical",0,0,0,0,finish
 admit.v.03,2,"allow participation in or the right to be part of; permit to exercise the rights, functions, and responsibilities of",0,0,0,2,include
@@ -114,7 +114,7 @@ charge.v.02,2,"blame for, make a claim of wrongdoing or misbehavior against",0,0
 move.v.07,2,go or proceed from one point to another,0,0,1,0,move
 rent.v.04,2,hold under a lease or rental agreement; of goods and services,0,0,0,2,hire
 fail.v.04,2,stop operating or functioning,0,0,2,0,die
-diagnose.v.01,2,determine or distinguish the nature of a problem or an illness through a diagnostic analysis,1,0,0,1,"name, diagnose"
+diagnose.v.01,2,determine or distinguish the nature of a problem or an illness through a diagnostic analysis,1,0,0,1,"diagnose, name"
 concede.v.03,2,give over; surrender or relinquish to the physical control of another,0,0,1,0,grant
 move_over.v.01,2,move in order to make room for someone for something,0,0,1,2,give
 bless.v.03,2,make the sign of the cross over someone in order to call on God for protection; consecrate,0,0,0,0,sign
