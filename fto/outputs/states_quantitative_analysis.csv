@@ -2,7 +2,7 @@ state (WORDNET SENSE IF EXIST),occorrences,definition,rep_event,asp_event,locati
 teach.v.02,28,accustom gradually to some action or attitude,0,6,9,15,teach
 work.v.19,27,"gratify and charm, usually in order to influence",0,2,8,7,work
 spell.v.03,24,write or name the letters that comprise the conventionally accepted form of (a word or part of a word),0,4,1,11,write
-service.v.01,20,be used by; as of a utility,0,0,3,11,"service, serve"
+service.v.01,20,be used by; as of a utility,0,0,3,11,"serve, service"
 serve.v.10,19,work for or be a servant to,0,1,8,13,"serve, attend"
 study.v.06,18,"think intently and at length, as for spiritual purposes",0,5,5,14,study
 work.v.01,16,exert oneself by doing mental or physical work for a purpose or out of necessity,0,3,3,12,work
@@ -37,7 +37,7 @@ participate.v.01,4,share in something,1,1,0,1,participate
 focus.v.02,3,cause to converge on or toward a central point,0,1,0,0,focus
 attend.v.03,3,to accompany as a circumstance or follow as a result,0,0,3,2,attend
 lend.v.01,3,bestow a quality on,0,0,1,1,"contribute, bring"
-publish.v.03,3,have (one's written work) issued for publication,0,0,0,2,"publish, write"
+publish.v.03,3,have (one's written work) issued for publication,0,0,0,2,"write, publish"
 lector.n.02,3,a public lecturer at certain universities,0,2,0,2,lecturer
 poet.n.01,3,a writer of poems (the term is usually reserved for writers of good poetry),2,0,1,0,poet
 drawing_card.n.02,3,a featured article of merchandise sold at a loss in order to draw customers,0,0,0,1,leader
@@ -55,7 +55,7 @@ director.n.03,3,someone who supervises the actors and directs the action in the 
 speciate.v.01,3,evolve so as to lead to a new species or develop in a way most suited to the environment,0,0,0,0,"specialize, specialise"
 subscriber.n.03,3,someone who contributes (or promises to contribute) a sum of money,0,1,0,2,contributor
 report.v.05,2,"be responsible for reporting the details of, as in journalism",0,0,1,0,cover
-keep.v.01,2,"keep in a certain state, position, or activity; e.g.,",0,0,0,1,"maintain, hold"
+keep.v.01,2,"keep in a certain state, position, or activity; e.g.,",0,0,0,1,"hold, maintain"
 celebrated.s.01,2,widely known and esteemed,0,1,0,0,famous
 think.v.03,2,"use or exercise the mind or one's power of reason in order to make inferences, decisions, or arrive at a solution or judgments",0,1,1,0,think
 cheer.v.05,2,spur on or encourage especially by cheers and shouts,1,0,0,0,"urge, inspire"
@@ -84,7 +84,7 @@ perform.v.03,2,give a performance (of something),0,0,0,0,perform
 separate.v.12,2,come apart,0,0,0,0,part
 dedicate.v.02,2,"open to public use, as of a highway, park, or building",0,0,1,0,dedicate
 lecture.v.01,2,deliver a lecture or talk,0,0,0,1,lecture
-visualize.v.01,2,imagine; conceive of; see in one's mind,0,0,1,0,"figure, project"
+visualize.v.01,2,imagine; conceive of; see in one's mind,0,0,1,0,"project, figure"
 education.n.04,2,the profession of teaching (especially at a school or college or university),0,2,1,1,education
 recipient_role.n.01,2,the semantic role of the animate entity that is passively involved in the happening denoted by the verb in the clause,0,1,1,0,recipient
 term.v.01,2,name formally or designate with a term,0,1,0,0,term
@@ -93,7 +93,7 @@ manage.v.02,2,"be in charge of, act on, or dispose of",0,0,1,0,manage
 president_of_the_united_states.n.02,2,the office of the United States head of state,0,0,0,2,president
 help.v.06,2,contribute to the furtherance of,0,0,0,0,help
 stay.v.01,2,stay the same; remain in a certain state,0,0,2,0,"remain, stay"
-stay.v.04,2,"continue in a place, position, or situation",0,0,0,0,"stay, remain"
+stay.v.04,2,"continue in a place, position, or situation",0,0,0,0,"remain, stay"
 take.v.29,2,be seized or affected in a specified way,0,0,1,0,take
 acknowledge.v.06,2,accept (someone) to be what is claimed or accept his power and authority,0,0,1,0,know
 finalist.n.01,2,a contestant who reaches the final stages of a competition,0,0,1,1,finalist
