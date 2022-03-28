@@ -2,8 +2,8 @@ state (WORDNET SENSE IF EXIST),occorrences,definition,rep_event,asp_event,locati
 teach.v.02,28,accustom gradually to some action or attitude,0,6,9,15,teach
 work.v.19,27,"gratify and charm, usually in order to influence",0,2,8,7,work
 spell.v.03,24,write or name the letters that comprise the conventionally accepted form of (a word or part of a word),0,4,1,11,write
-service.v.01,20,be used by; as of a utility,0,0,3,11,"serve, service"
-serve.v.10,19,work for or be a servant to,0,1,8,13,"serve, attend"
+service.v.01,20,be used by; as of a utility,0,0,3,11,"service, serve"
+serve.v.10,19,work for or be a servant to,0,1,8,13,"attend, serve"
 study.v.06,18,"think intently and at length, as for spiritual purposes",0,5,5,14,study
 work.v.01,16,exert oneself by doing mental or physical work for a purpose or out of necessity,0,3,3,12,work
 analyze.v.01,16,consider in detail and subject to an analysis in order to discover essential features or meaning,0,5,5,8,study
@@ -24,7 +24,7 @@ know.v.03,6,be aware of the truth of something; have a belief or faith in someth
 solve.v.01,6,find the solution to (a problem or question) or understand the meaning of,0,2,1,1,work
 publish.v.02,5,prepare and issue for public distribution or sale,0,1,0,2,publish
 member.n.01,5,one of the persons who compose a social group (especially individuals who have joined and participate in a group organization),0,1,2,2,member
-attend.v.02,5,take charge of or deal with,0,0,2,0,"saw, attend"
+attend.v.02,5,take charge of or deal with,0,0,2,0,"attend, saw"
 admit.v.03,5,"allow participation in or the right to be part of; permit to exercise the rights, functions, and responsibilities of",0,0,2,0,include
 play.v.12,4,pretend to be somebody in the framework of a game or playful activity,0,0,1,1,play
 have.v.01,4,"have or possess, either in a concrete or an abstract sense",0,0,0,4,hold
@@ -36,7 +36,7 @@ grow.v.08,4,come to have or undergo a change of (physical features and attribute
 participate.v.01,4,share in something,1,1,0,1,participate
 focus.v.02,3,cause to converge on or toward a central point,0,1,0,0,focus
 attend.v.03,3,to accompany as a circumstance or follow as a result,0,0,3,2,attend
-lend.v.01,3,bestow a quality on,0,0,1,1,"contribute, bring"
+lend.v.01,3,bestow a quality on,0,0,1,1,"bring, contribute"
 publish.v.03,3,have (one's written work) issued for publication,0,0,0,2,"write, publish"
 lector.n.02,3,a public lecturer at certain universities,0,2,0,2,lecturer
 poet.n.01,3,a writer of poems (the term is usually reserved for writers of good poetry),2,0,1,0,poet
@@ -52,10 +52,10 @@ provide.v.03,3,"determine (what is to happen in certain contingencies), especial
 grow.v.10,3,become attached by or as if by the process of growth,0,0,3,0,grow
 reserve.v.04,3,arrange for and reserve (something for someone else) in advance,0,0,0,1,hold
 director.n.03,3,someone who supervises the actors and directs the action in the production of a show,0,2,1,3,director
-speciate.v.01,3,evolve so as to lead to a new species or develop in a way most suited to the environment,0,0,0,0,"specialize, specialise"
+speciate.v.01,3,evolve so as to lead to a new species or develop in a way most suited to the environment,0,0,0,0,"specialise, specialize"
 subscriber.n.03,3,someone who contributes (or promises to contribute) a sum of money,0,1,0,2,contributor
 report.v.05,2,"be responsible for reporting the details of, as in journalism",0,0,1,0,cover
-keep.v.01,2,"keep in a certain state, position, or activity; e.g.,",0,0,0,1,"hold, maintain"
+keep.v.01,2,"keep in a certain state, position, or activity; e.g.,",0,0,0,1,"maintain, hold"
 celebrated.s.01,2,widely known and esteemed,0,1,0,0,famous
 think.v.03,2,"use or exercise the mind or one's power of reason in order to make inferences, decisions, or arrive at a solution or judgments",0,1,1,0,think
 cheer.v.05,2,spur on or encourage especially by cheers and shouts,1,0,0,0,"urge, inspire"
@@ -84,7 +84,7 @@ perform.v.03,2,give a performance (of something),0,0,0,0,perform
 separate.v.12,2,come apart,0,0,0,0,part
 dedicate.v.02,2,"open to public use, as of a highway, park, or building",0,0,1,0,dedicate
 lecture.v.01,2,deliver a lecture or talk,0,0,0,1,lecture
-visualize.v.01,2,imagine; conceive of; see in one's mind,0,0,1,0,"project, figure"
+visualize.v.01,2,imagine; conceive of; see in one's mind,0,0,1,0,"figure, project"
 education.n.04,2,the profession of teaching (especially at a school or college or university),0,2,1,1,education
 recipient_role.n.01,2,the semantic role of the animate entity that is passively involved in the happening denoted by the verb in the clause,0,1,1,0,recipient
 term.v.01,2,name formally or designate with a term,0,1,0,0,term
