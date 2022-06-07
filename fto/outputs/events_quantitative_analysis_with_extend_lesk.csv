@@ -1,18 +1,18 @@
 event (WORDNET SENSE IF EXIST),occorrences,definition,rep_event,asp_event,location,organization,targets
-receive.v.02,72,receive a specified treatment (abstract),1,1,13,43,"receive, get, obtain"
+receive.v.02,72,receive a specified treatment (abstract),1,1,13,43,"get, receive, obtain"
 publish.v.03,51,have (one's written work) issued for publication,0,0,9,16,"write, publish"
 award.v.01,23,"give, especially as an honor or reward",1,0,3,11,award
 graduate.v.01,21,receive an academic degree upon completion of one's studies,0,0,6,15,graduate
 act.v.01,20,"perform an action, or work out or perform (an action)",0,0,14,0,move
-establish.v.01,18,set up or found,0,0,2,12,"found, launch"
+establish.v.01,18,set up or found,0,0,2,12,"launch, found"
 participate.v.01,16,share in something,0,0,3,6,participate
-complete.v.01,15,come or bring to a finish or an end,0,0,3,12,"finish, complete"
+complete.v.01,15,come or bring to a finish or an end,0,0,3,12,"complete, finish"
 return.v.16,15,"submit (a report, etc.) to someone in authority",1,0,8,1,return
 name.v.01,14,assign a specified (usually proper) proper name to,1,0,1,12,name
 join.v.01,14,become part of; become a member of a group or organization,0,0,0,13,join
 award.v.02,13,give as judged due or on the basis of merit,0,0,1,6,"grant, award"
 take.v.02,12,require (time or space),0,0,6,5,take
-travel.v.01,12,"change location; move, travel, or proceed, also metaphorically",0,0,9,1,"move, travel, go"
+travel.v.01,12,"change location; move, travel, or proceed, also metaphorically",0,0,9,1,"go, travel, move"
 give_birth.v.01,12,cause to be born,1,0,8,0,bear
 appoint.v.02,11,"assign a duty, responsibility or obligation to",0,0,5,8,appoint
 prove.v.02,10,"establish the validity of something, as by an example, explanation or experiment",0,0,2,6,establish
@@ -20,17 +20,17 @@ write.v.04,10,communicate (with) in writing,1,0,0,4,write
 elect.v.01,10,select by a vote for an office or membership,0,0,1,8,elect
 die.v.01,10,pass from physical life and lose all bodily attributes and functions necessary to sustain life,0,0,8,1,die
 perform.v.03,9,give a performance (of something),0,1,3,1,perform
-impart.v.01,9,transmit (knowledge or skills),0,1,1,3,"leave, give"
+impart.v.01,9,transmit (knowledge or skills),0,1,1,3,"give, leave"
 meet.v.08,9,get to know; get acquainted with,0,0,2,2,meet
 reach.v.07,8,"reach a goal, e.g.,",0,0,2,1,make
 turn.v.08,8,let (something) fall or spill from a container,1,0,0,4,release
 aim.v.01,8,"point or cause to go (blows, weapons, or objects such as photographic equipment) towards",0,0,3,2,take
 gain.v.05,8,"obtain advantages, such as points, etc.",0,0,2,2,win
-grow.v.08,8,come to have or undergo a change of (physical features and attributes),0,0,2,3,"produce, grow, acquire, develop"
+grow.v.08,8,come to have or undergo a change of (physical features and attributes),0,0,2,3,"grow, acquire, develop, produce"
 visit.v.01,7,"go to see a place, as for entertainment",0,0,4,0,visit
 leave.v.02,7,"go and leave behind, either intentionally or by neglect or forgetfulness",0,0,3,1,leave
 death.n.01,7,the event of dying or departure from life,0,0,0,0,death
-translate.v.01,6,restate (words) from one language into another language,0,0,0,1,"render, translate"
+translate.v.01,6,restate (words) from one language into another language,0,0,0,1,"translate, render"
 spend.v.01,6,pass time in a specific way,0,0,5,1,spend
 die.v.03,6,"be brought to or as if to the point of death by an intense emotion such as embarrassment, amusement, or shame",0,0,3,0,die
 bear.v.05,5,"bring forth,",0,0,4,0,bear
@@ -46,21 +46,21 @@ send.v.02,4,"to cause or order to be taken, directed, or transmitted to another 
 edit.v.01,4,"prepare for publication or presentation by correcting, revising, or adapting",0,0,0,0,edit
 visit.v.07,4,stay with as a guest,0,0,1,0,visit
 bear.v.11,3,"have rightfully; of rights, titles, and offices",0,0,2,0,bear
-choose.v.01,3,"pick out, select, or choose from a number of alternatives",0,0,0,0,"select, choose"
+choose.v.01,3,"pick out, select, or choose from a number of alternatives",0,0,0,0,"choose, select"
 kill.v.01,3,"cause to die; put to death, usually intentionally or knowingly",1,0,1,0,kill
 graduation.n.03,3,a line (as on a vessel or ruler) that marks a measurement,0,0,0,0,graduation
 marry.v.02,3,perform a marriage ceremony,0,0,0,0,marry
 play.v.06,3,replay (as a melody),0,0,0,0,play
 leave.v.08,3,remove oneself from an association with or participation in,0,0,1,0,leave
-arouse.v.01,3,"call forth (emotions, feelings, and responses)",0,0,2,0,"fire, raise"
-necessitate.v.01,3,"require as useful, just, or proper",0,0,0,1,"involve, demand"
+arouse.v.01,3,"call forth (emotions, feelings, and responses)",0,0,2,0,"raise, fire"
+necessitate.v.01,3,"require as useful, just, or proper",0,0,0,1,"demand, involve"
 sign.v.01,3,mark with one's signature; write one's name (on),0,0,0,1,sign
 give.v.19,3,give (as medicine),0,0,0,1,give
 settle.v.01,3,"settle into a position, usually on a surface or ground",0,0,3,0,settle
 form.v.01,3,create (as an entity),0,0,1,1,"form, organize"
 retirement.n.01,3,the state of being retired from one's business or occupation,0,0,0,0,retirement
 publication.n.01,3,a copy of a printed work offered for distribution,0,0,1,0,publication
-free.v.05,3,make (information) available for publication,0,0,0,0,"free, release"
+free.v.05,3,make (information) available for publication,0,0,0,0,"release, free"
 include.v.01,3,"have as a part, be made up out of",0,0,0,3,include
 screen.v.04,3,project onto a screen for viewing,0,0,2,0,screen
 move.v.03,3,"move so as to change position, perform a nontranslational motion",0,0,3,0,move
@@ -90,7 +90,7 @@ sell.v.01,2,exchange or deliver for money or its equivalent,0,0,0,0,sell
 arrive.v.02,2,succeed in a big way; get to the top,0,0,1,0,arrive
 hire.v.01,2,engage or hire for work,0,0,0,2,hire
 accuse.v.01,2,bring an accusation against; level a charge against,0,0,0,0,accuse
-premier.v.01,2,be performed for the first time,0,0,0,1,"premier, premiere"
+premier.v.01,2,be performed for the first time,0,0,0,1,"premiere, premier"
 plunge.v.04,2,begin with vigor,0,0,0,1,launch
 plump.v.04,2,give support (to) or make a choice (of) one out of a group or number,0,0,1,0,go
 deliver.v.07,2,"utter (an exclamation, noise, etc.)",0,0,0,1,deliver

@@ -8,7 +8,7 @@ study.v.06,20,"think intently and at length, as for spiritual purposes",0,3,5,14
 work.v.19,15,"gratify and charm, usually in order to influence",0,0,4,8,work
 spend.v.01,14,pass time in a specific way,0,0,5,1,spend
 member.n.01,13,one of the persons who compose a social group (especially individuals who have joined and participate in a group organization),1,3,2,8,member
-grow.v.08,13,come to have or undergo a change of (physical features and attributes),0,0,10,1,"grow, get, develop"
+grow.v.08,13,come to have or undergo a change of (physical features and attributes),0,0,10,1,"get, develop, grow"
 writer.n.01,13,writes (books or stories or articles or the like) professionally (for pay),1,1,4,1,writer
 serve.v.06,11,provide (usually but not necessarily food),0,0,2,5,serve
 be.v.11,10,"have life, be alive",0,0,8,0,live
@@ -29,15 +29,15 @@ play.v.06,5,replay (as a melody),1,0,2,2,play
 collapse.v.01,5,"break down, literally or metaphorically",0,1,3,3,founder
 populate.v.01,5,inhabit or live in; be an inhabitant of,0,0,2,0,live
 director.n.01,4,someone who controls resources and expenditures,0,3,1,4,director
-keep.v.01,4,"keep in a certain state, position, or activity; e.g.,",0,0,0,2,"maintain, hold"
+keep.v.01,4,"keep in a certain state, position, or activity; e.g.,",0,0,0,2,"hold, maintain"
 study.v.02,4,be a student; follow a course of study; be enrolled at an institute of learning,0,0,1,2,study
 acknowledge.v.06,4,accept (someone) to be what is claimed or accept his power and authority,0,1,1,0,know
 professor.n.01,4,someone who is a member of the faculty at a college or university,0,1,0,2,professor
 analyze.v.01,4,consider in detail and subject to an analysis in order to discover essential features or meaning,0,1,1,1,study
 editor.n.01,4,a person responsible for the editorial aspects of publication; the person who determines the final content of a text (especially of a newspaper or magazine),0,1,1,2,editor
-know.v.05,4,"have firsthand knowledge of states, situations, emotions, or sensations",0,0,1,1,"know, live"
+know.v.05,4,"have firsthand knowledge of states, situations, emotions, or sensations",0,0,1,1,"live, know"
 receive.v.02,4,receive a specified treatment (abstract),0,0,2,0,receive
-scholar.n.01,3,a learned person (especially in the humanities); someone who by long study has gained mastery in one or more disciplines,0,0,0,1,"scholar, student"
+scholar.n.01,3,a learned person (especially in the humanities); someone who by long study has gained mastery in one or more disciplines,0,0,0,1,"student, scholar"
 poet.n.01,3,a writer of poems (the term is usually reserved for writers of good poetry),2,0,1,0,poet
 focus.v.05,3,put (an image) into focus,0,1,0,0,focus
 lector.n.02,3,a public lecturer at certain universities,0,2,0,2,lecturer
@@ -54,7 +54,7 @@ respect.v.01,3,regard highly; think much of,0,1,0,0,respect
 leader.n.01,3,a person who rules or guides or inspires others,0,0,0,1,leader
 know.v.04,2,be familiar or acquainted with a person or an object,0,1,0,1,know
 journalist.n.01,2,a writer for newspapers and magazines,0,0,0,1,journalist
-roll_up.v.02,2,get or gather together,0,0,1,0,"compile, amass"
+roll_up.v.02,2,get or gather together,0,0,1,0,"amass, compile"
 specialize.v.01,2,become more focus on an area of activity or field of study,0,0,0,0,specialize
 advertise.v.02,2,make publicity for; try to sell (a product),0,0,1,0,promote
 prosecute.v.03,2,carry out or participate in an activity; be involved in,0,0,1,0,pursue
