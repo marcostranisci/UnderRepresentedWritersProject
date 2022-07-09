@@ -1,0 +1,219 @@
+@prefix : <https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:mapping-2010974912> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT DISTINCT _gender_id,gender,value from wiki_gender"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "value";
+          rr:termType rr:Literal
+        ];
+      rr:predicate rdfs:label
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "gender";
+          rr:termType rr:Literal
+        ];
+      rr:predicate :hasIdentifier
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class :Gender;
+      rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{_gender_id}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:mapping--1449422813> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT DISTINCT Q1.author as au,Q1.year as year,Q1.country as country FROM (SELECT wiki_authors_dateOfBirth.birthYear as year,wiki_authors_dateOfBirth._author_id as author, wiki_authors_birthCountry.birthCountry as country FROM wiki_authors_dateOfBirth LEFT JOIN wiki_authors_birthCountry ON wiki_authors_birthCountry._author_id = wiki_authors_dateOfBirth._author_id) as Q1 WHERE Q1.country IS NULL"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{year}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :isSettingFor
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{au}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :isSettingFor
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class :Birth;
+      rr:template "{au}_{year}";
+      rr:termType rr:BlankNode
+    ] .
+
+<urn:mapping-1827801228> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT DISTINCT _author_id,underrepresented,name,author FROM all_authors_underrep"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "author";
+          rr:termType rr:Literal
+        ];
+      rr:predicate :hasIdentifier
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "name";
+          rr:termType rr:Literal
+        ];
+      rr:predicate rdfs:label
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{underrepresented}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :hasRole
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class :Person;
+      rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{_author_id}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:mapping-1722121546> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT DISTINCT _synopsis_id FROM wiki_authors_synopsis"
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class :Description;
+      rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{_synopsis_id}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:mapping--785787580> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT DISTINCT Q1.author as au,Q1.year as year,Q1.country as country FROM (SELECT wiki_authors_dateOfDeath.dateOfDeath as year,wiki_authors_dateOfDeath._author_id as author, wiki_authors_deathCountry.deathCountry as country FROM wiki_authors_dateOfDeath JOIN wiki_authors_deathCountry ON wiki_authors_deathCountry._author_id = wiki_authors_dateOfDeath._author_id) as Q1"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{country}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :isSettingFor
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{au}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :isSettingFor
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{year}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :isSettingFor
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class :Death;
+      rr:template "{au}_{year}";
+      rr:termType rr:BlankNode
+    ] .
+
+<urn:mapping-1099994555> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT DISTINCT Q1.author as au,Q1.year as year,Q1.country as country FROM (SELECT wiki_authors_dateOfBirth.birthYear as year,wiki_authors_dateOfBirth._author_id as author, wiki_authors_birthCountry.birthCountry as country FROM wiki_authors_dateOfBirth JOIN wiki_authors_birthCountry ON wiki_authors_birthCountry._author_id = wiki_authors_dateOfBirth._author_id) as Q1"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{year}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :isSettingFor
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{au}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :isSettingFor
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{country}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :isSettingFor
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class :Birth;
+      rr:template "{au}_{year}";
+      rr:termType rr:BlankNode
+    ] .
+
+<urn:mapping--1283863443> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT DISTINCT Q1.author as au,Q1.year as year,Q1.country as country FROM (SELECT wiki_authors_dateOfDeath.dateOfDeath as year,wiki_authors_dateOfDeath._author_id as author, wiki_authors_deathCountry.deathCountry as country FROM wiki_authors_dateOfDeath LEFT JOIN wiki_authors_deathCountry ON wiki_authors_deathCountry._author_id = wiki_authors_dateOfDeath._author_id) as Q1 WHERE Q1.country IS NULL"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{au}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :isSettingFor
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{year}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :isSettingFor
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class :Death;
+      rr:template "{au}_{year}";
+      rr:termType rr:BlankNode
+    ] .
+
+<urn:mapping--1880193781> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT DISTINCT _id,_author_id FROM all_authors_and_wd_works"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{_author_id}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :wasAttributedTo
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#{_id}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:mapping--1066019464> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT * FROM wiki_authors_gender"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{_gender_id}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :gender
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{_author_id}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:MAPID-c7c154cf925a45ea8bfe6ae29fc48278> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT DISTINCT _synopsis_id,_author_Id FROM wiki_authors_synopsis"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{_synopsis_id}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :isDescribedBy
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{_author_id}";
+      rr:termType rr:IRI
+    ] .

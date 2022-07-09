@@ -1,0 +1,96 @@
+@prefix : <https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix urb: <https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:mapping-34785288> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "select _prize_id,year,label from all_prizes"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{year}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :isSettingFor
+    ], [ a rr:PredicateObjectMap;
+      rr:object urb:Goodreads;
+      rr:predicate :wasDerivedFrom
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "label";
+          rr:termType rr:Literal
+        ];
+      rr:predicate rdfs:label
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class :Prize;
+      rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{_prize_id}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:mapping--170878691-7206329a-ee4c-4b73-bb24-48b550c2c977> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "select _prize_id,_author_id,wasAwarded from gr_prizes_authors"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#{_author_id}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :isSettingFor
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{_prize_id}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:mapping--170878691-154c8585-f746-4508-9e50-c4c941f15d25> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "select _prize_id,_author_id,wasAwarded from gr_prizes_authors"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{wasAwarded}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :hasRole
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#{_author_id}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:mapping-488938950-4c2c1bee-9f86-425e-b758-22b546ee72db> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT _id,_prize_id,wasAwarded FROM gr_prizes_works"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#{_id}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :isSettingFor
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{_prize_id}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:mapping-488938950-14ba8114-1a38-4754-9145-36a61b873ede> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT _id,_prize_id,wasAwarded FROM gr_prizes_works"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{wasAwarded}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :hasRole
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#{_id}";
+      rr:termType rr:IRI
+    ] .

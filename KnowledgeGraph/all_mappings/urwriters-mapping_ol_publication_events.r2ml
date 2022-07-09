@@ -1,0 +1,75 @@
+@prefix : <https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix urb: <https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:mapping--2005000150> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT DISTINCT Q1.oid as oid,Q1.pub as pub,Q1.country as country,Q1.year as year FROM (SELECT ol_editions_and_publishers._edition_id as oid,ol_editions_and_publishers._pub_id as pub,ol_editions_and_linked_countries.CountryIsoCode as country,ol_editions_and_publish_dates.publish_date as year FROM ol_editions_and_publishers JOIN  ol_editions_and_linked_countries ON ol_editions_and_linked_countries._edition_id = ol_editions_and_publishers._edition_id JOIN ol_editions_and_publish_dates ON ol_editions_and_publish_dates._edition_id = ol_editions_and_publishers._edition_id) as Q1 where Q1.country is null"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#{oid}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :hasParticipant
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{year}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :hasTimeInterval
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{pub}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :wasAssociatedWith
+    ], [ a rr:PredicateObjectMap;
+      rr:object urb:OpenLibrary;
+      rr:predicate :wasDerivedFrom
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class :Activity;
+      rr:template "{oid}_{year}";
+      rr:termType rr:BlankNode
+    ] .
+
+<urn:mapping--2092377014> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT DISTINCT Q1.oid as oid,Q1.pub as pub,Q1.country as country,Q1.year as year FROM (SELECT ol_editions_and_publishers._edition_id as oid,ol_editions_and_publishers._pub_id as pub,ol_editions_and_linked_countries.CountryIsoCode as country,ol_editions_and_publish_dates.publish_date as year FROM ol_editions_and_publishers JOIN  ol_editions_and_linked_countries ON ol_editions_and_linked_countries._edition_id = ol_editions_and_publishers._edition_id JOIN ol_editions_and_publish_dates ON ol_editions_and_publish_dates._edition_id = ol_editions_and_publishers._edition_id) as Q1"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{year}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :hasTimeInterval
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{country}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :hasParticipant
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#{oid}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :hasParticipant
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{pub}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :wasAssociatedWith
+    ], [ a rr:PredicateObjectMap;
+      rr:object urb:OpenLibrary;
+      rr:predicate :wasDerivedFrom
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class :Activity;
+      rr:template "{oid}_{country}";
+      rr:termType rr:BlankNode
+    ] .

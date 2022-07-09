@@ -1,0 +1,35 @@
+@prefix : <https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix urb: <https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:mapping-1247661623> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT DISTINCT _id,title,work,wasDerived FROM all_urb_works WHERE _id regexp '_ol_'"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "title";
+          rr:termType rr:Literal
+        ];
+      rr:predicate dc:title
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#{wasDerived}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :wasDerivedFrom
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "work";
+          rr:termType rr:Literal
+        ];
+      rr:predicate :hasIdentifier
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class urb:Expression;
+      rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#{_id}";
+      rr:termType rr:IRI
+    ] .

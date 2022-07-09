@@ -1,0 +1,89 @@
+@prefix : <https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix urb: <https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:MAPID-7fa855da7f294e3aa909fd98697ef967> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT DISTINCT Q1.oid as oid,Q1.pub as pub,Q1.year as year FROM (SELECT gbook_and_publishers._gbook_id as oid,gbook_and_publishers._pub_id as pub,gbook_publish_dates.year as year FROM gbook_and_publishers JOIN  gbook_publish_dates ON gbook_publish_dates._gbook_id = gbook_and_publishers._gbook_id) as Q1"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#{oid}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :hasParticipant
+    ], [ a rr:PredicateObjectMap;
+      rr:object urb:GoogleBooks;
+      rr:predicate :wasDerivedFrom
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{pub}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :wasAssociatedWith
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{year}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :hasTimeInterval
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class :Activity;
+      rr:template "{oid}_{year}";
+      rr:termType rr:BlankNode
+    ] .
+
+<urn:MAPID-d57108ec999c47e3b4c74e0db5b0928b> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT DISTINCT Q1.oid as oid,Q1.pub as pub,Q1.year as year FROM (SELECT gbook_and_publishers._gbook_id as oid,gbook_and_publishers._pub_id as pub,gbook_publish_dates.year as year FROM gbook_and_publishers LEFT JOIN  gbook_publish_dates ON gbook_publish_dates._gbook_id = gbook_and_publishers._gbook_id) as Q1 where Q1.year is null"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#{oid}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :hasParticipant
+    ], [ a rr:PredicateObjectMap;
+      rr:object urb:GoogleBooks;
+      rr:predicate :wasDerivedFrom
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{pub}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :wasAssociatedWith
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class :Activity;
+      rr:template "{oid}_{pub}";
+      rr:termType rr:BlankNode
+    ] .
+
+<urn:MAPID-d30e41d42e884de1b48f1257eb4d7a75> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT DISTINCT Q1.year,Q1.oid,Q1.pub FROM (SELECT gbook_publish_dates._gbook_id as oid,gbook_and_publishers._pub_id as pub,gbook_publish_dates.year as year FROM gbook_and_publishers RIGHT JOIN  gbook_publish_dates ON gbook_publish_dates._gbook_id = gbook_and_publishers._gbook_id) as Q1 where Q1.pub is null limit 100"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:object urb:GoogleBooks;
+      rr:predicate :wasDerivedFrom
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{oid}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :hasParticipant
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{year}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :hasTimeInterval
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class :Activity;
+      rr:template "{oid}_{year}";
+      rr:termType rr:BlankNode
+    ] .

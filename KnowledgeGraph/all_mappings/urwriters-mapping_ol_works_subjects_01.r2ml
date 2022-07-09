@@ -1,0 +1,42 @@
+@prefix : <https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix urb: <https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:MAPID-be5b2934c0794b8dbb0f0d2a7fae639d> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "select subject,_subj_id from ol_subjects"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:object :OpenLibrary;
+      rr:predicate :wasDerivedFrom
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "subject";
+          rr:termType rr:Literal
+        ];
+      rr:predicate rdfs:label
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class urb:Folksonomy;
+      rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#{_subj_id}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:MAPID-5516d5d254f44743b99dbc1fa5206d54> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "select distinct _edition_id,_subj_id from ol_editions_and_subjects limit 1696828"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#{_subj_id}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate urb:hasSubject
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#{_edition_id}";
+      rr:termType rr:IRI
+    ] .

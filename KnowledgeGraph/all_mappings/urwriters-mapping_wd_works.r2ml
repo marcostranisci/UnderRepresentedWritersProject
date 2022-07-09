@@ -1,0 +1,230 @@
+@prefix : <https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix urb: <https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:mapping-359488302> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT DISTINCT _id,_subj_id FROM wiki_works_and_subject"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#{_subj_id}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate urb:hasSubject
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#{_id}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:mapping-1639245298> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT DISTINCT Q1.oid as oid,Q1.pub as pub,Q1.country as country,Q1.year as year FROM (SELECT wiki_works_and_publisher._id as oid,wiki_works_and_publisher._pub_id as pub,wiki_works_and_country.CountryIsoCode as country,wiki_works_inception.inception as year FROM wiki_works_and_publisher JOIN  wiki_works_and_country ON wiki_works_and_country._id = wiki_works_and_publisher._id JOIN wiki_works_inception ON wiki_works_inception._id = wiki_works_and_publisher._id) as Q1"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{country}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :hasParticipant
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#{oid}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :hasParticipant
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#{pub}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :wasAssociatedWith
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{year}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :hasTimeInterval
+    ], [ a rr:PredicateObjectMap;
+      rr:object urb:Wikipedia;
+      rr:predicate :wasDerivedFrom
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class :Activity;
+      rr:template "{oid}_{year}";
+      rr:termType rr:BlankNode
+    ] .
+
+<urn:mapping-1705068541> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT DISTINCT _subj_id,subject,subjectLabel FROM wiki_subject_label"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "subject";
+          rr:termType rr:Literal
+        ];
+      rr:predicate :hasIdentifier
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class urb:Folksonomy;
+      rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#{_subj_id}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:mapping-94841784> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT DISTINCT Q1.oid as oid,Q1.pub as pub,Q1.country as country,Q1.year as year FROM (SELECT wiki_works_and_publisher._id as oid,wiki_works_and_publisher._pub_id as pub,wiki_works_and_country.CountryIsoCode as country,wiki_works_inception.inception as year FROM wiki_works_and_publisher  LEFT JOIN  wiki_works_and_country ON wiki_works_and_country._id = wiki_works_and_publisher._id JOIN wiki_works_inception ON wiki_works_inception._id = wiki_works_and_publisher._id) as Q1 WHERE Q1.country is null"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{pub}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :wasAssociatedWith
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#{oid}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :hasParticipant
+    ], [ a rr:PredicateObjectMap;
+      rr:object urb:Wikipedia;
+      rr:predicate :wasDerivedFrom
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{year}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :hasTimeInterval
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class :Activity;
+      rr:template "{oid}_{year}";
+      rr:termType rr:BlankNode
+    ] .
+
+<urn:mapping--381280153> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT DISTINCT _id,lang FROM wiki_works_and_language"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{lang}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :language
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#{_id}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:mapping--1006121181> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT DISTINCT value,publisher,_pub_id FROM wiki_publishers"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "publisher";
+          rr:termType rr:Literal
+        ];
+      rr:predicate :hasIdentifier
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class :Organization;
+      rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#{_pub_id}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:mapping--1607677925> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT DISTINCT _id,title,work,wasDerived FROM all_urb_works WHERE work regexp 'wiki'"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:object urb:Wikipedia;
+      rr:predicate :wasDerivedFrom
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "work";
+          rr:termType rr:Literal
+        ];
+      rr:predicate :hasIdentifier
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "title";
+          rr:termType rr:Literal
+        ];
+      rr:predicate dc:title
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class urb:Expression;
+      rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#{_id}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:mapping-1588074184> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT DISTINCT _synopsis_id FROM wiki_works_synopsis"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:object urb:Wikipedia;
+      rr:predicate :wasDerivedFrom
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class :Description;
+      rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{_synopsis_id}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:mapping--1158475877> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT DISTINCT Q1.oid as oid,Q1.pub as pub,Q1.country as country,Q1.year as year FROM (SELECT wiki_works_and_publisher._id as oid,wiki_works_and_publisher._pub_id as pub,wiki_works_and_country.CountryIsoCode as country,wiki_works_inception.inception as year FROM wiki_works_and_publisher  JOIN  wiki_works_and_country ON wiki_works_and_country._id = wiki_works_and_publisher._id LEFT JOIN wiki_works_inception ON wiki_works_inception._id = wiki_works_and_publisher._id) as Q1 WHERE Q1.year is null"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#{pub}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :wasAssociatedWith
+    ], [ a rr:PredicateObjectMap;
+      rr:object urb:Wikipedia;
+      rr:predicate :wasDerivedFrom
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{country}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :hasParticipant
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#{oid}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :hasParticipant
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class :Activity;
+      rr:template "{oid}_{country}";
+      rr:termType rr:BlankNode
+    ] .
+
+<urn:mapping-945328676> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT DISTINCT _id,_synopsis_id FROM wiki_works_synopsis"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{_synopsis_id}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :isDescribedBy
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#{_id}";
+      rr:termType rr:IRI
+    ] .

@@ -1,0 +1,413 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#"
+     xml:base="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:skos1="http://www.w3.org/2008/05/skos#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl">
+        <dc:creator xml:lang="en">Marco Antonio Stranisci
+Rossana Damiano
+Viviana Patti</dc:creator>
+        <dc:date>2022-07-0</dc:date>
+        <dc:description xml:lang="en">The Under-Represented Books Ontology is an ontology aimed at modelling works created by Western and Transnational writers born from 1808. The ontology relies on FRBR for the encoding of works, expressions, and editions, and on DOLCE for the representations of prizes and publications.
+The Under-Represented Books Ontology is parte of the Under-Represented Writer project, which is aimed at exploring and mitigating the potential lack of representation of non-Western writers.</dc:description>
+        <dc:rights>CC BY-NC 4.0</dc:rights>
+        <dc:source>https://underrepresented.di.unito.it/</dc:source>
+        <dc:title xml:lang="en">The Ontology of Under-Represented Books</dc:title>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/creator">
+        <owl:equivalentProperty rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#hasCreator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/publisher">
+        <owl:equivalentProperty rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#hasPublisher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/fabio/hasManifestation -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/fabio/hasManifestation">
+        <owl:equivalentProperty rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#manifestation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/fabio/isManifestationOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/fabio/isManifestationOf">
+        <owl:equivalentProperty rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#manifestationOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/vocab/frbr/core#embodiment -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/vocab/frbr/core#embodiment">
+        <owl:equivalentProperty rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#embodiment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/vocab/frbr/core#embodimentOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/vocab/frbr/core#embodimentOf">
+        <owl:equivalentProperty rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#embodimentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/vocab/frbr/core#realization -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/vocab/frbr/core#realization">
+        <owl:equivalentProperty rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#realization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/vocab/frbr/core#realizationOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/vocab/frbr/core#realizationOf">
+        <owl:equivalentProperty rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#realizationOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/vocab/frbr/core#subject -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/vocab/frbr/core#subject">
+        <owl:equivalentProperty rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#hasSubject"/>
+        <owl:inverseOf rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#isSubjectOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#embodiment -->
+
+    <owl:ObjectProperty rdf:about="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#embodiment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#embodimentOf"/>
+        <rdfs:domain rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#Expression"/>
+        <rdfs:range rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#Manifestation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#embodimentOf -->
+
+    <owl:ObjectProperty rdf:about="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#embodimentOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#Manifestation"/>
+        <rdfs:range rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#Expression"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#hasCreator -->
+
+    <owl:ObjectProperty rdf:about="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#hasCreator"/>
+    
+
+
+    <!-- https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#hasLanguage -->
+
+    <owl:ObjectProperty rdf:about="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#hasLanguage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#hasPublisher -->
+
+    <owl:ObjectProperty rdf:about="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#hasPublisher">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#hasSubject -->
+
+    <owl:ObjectProperty rdf:about="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#hasSubject">
+        <owl:equivalentProperty rdf:resource="https://www.wikidata.org/wiki/Property:P921"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#isSubjectOf -->
+
+    <owl:ObjectProperty rdf:about="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#isSubjectOf"/>
+    
+
+
+    <!-- https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#manifestation -->
+
+    <owl:ObjectProperty rdf:about="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#manifestation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#manifestationOf"/>
+        <rdfs:domain rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#Work"/>
+        <rdfs:range rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#Manifestation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#manifestationOf -->
+
+    <owl:ObjectProperty rdf:about="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#manifestationOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#Manifestation"/>
+        <rdfs:range rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#Work"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#realization -->
+
+    <owl:ObjectProperty rdf:about="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#realization">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#realizationOf"/>
+        <rdfs:domain rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#Work"/>
+        <rdfs:range rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#Expression"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#realizationOf -->
+
+    <owl:ObjectProperty rdf:about="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#realizationOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#Expression"/>
+        <rdfs:range rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#Work"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#responsibleEntity -->
+
+    <owl:ObjectProperty rdf:about="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#responsibleEntity"/>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Property:P136 -->
+
+    <owl:ObjectProperty rdf:about="https://www.wikidata.org/wiki/Property:P136"/>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Property:P921 -->
+
+    <owl:ObjectProperty rdf:about="https://www.wikidata.org/wiki/Property:P921"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#GoodReadsRatingCount -->
+
+    <owl:DatatypeProperty rdf:about="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#GoodReadsRatingCount">
+        <rdfs:subPropertyOf rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#ratingCount"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#GoogleBooksRatingCount -->
+
+    <owl:DatatypeProperty rdf:about="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#GoogleBooksRatingCount">
+        <rdfs:subPropertyOf rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#ratingCount"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#abstract -->
+
+    <owl:DatatypeProperty rdf:about="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#abstract"/>
+    
+
+
+    <!-- https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#goodreadsRating -->
+
+    <owl:DatatypeProperty rdf:about="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#goodreadsRating">
+        <rdfs:subPropertyOf rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#rating"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#googleBooksRating -->
+
+    <owl:DatatypeProperty rdf:about="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#googleBooksRating">
+        <rdfs:subPropertyOf rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#rating"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#hasPublicationYear -->
+
+    <owl:DatatypeProperty rdf:about="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#hasPublicationYear"/>
+    
+
+
+    <!-- https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#rating -->
+
+    <owl:DatatypeProperty rdf:about="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#rating"/>
+    
+
+
+    <!-- https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#ratingCount -->
+
+    <owl:DatatypeProperty rdf:about="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#ratingCount"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/spar/fabio/Folksonomy -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Folksonomy">
+        <owl:equivalentClass rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#Folksonomy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Work -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Work">
+        <owl:equivalentClass rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#Work"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vocab/frbr/core#Expression -->
+
+    <owl:Class rdf:about="http://purl.org/vocab/frbr/core#Expression">
+        <owl:equivalentClass rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vocab/frbr/core#Manifestation -->
+
+    <owl:Class rdf:about="http://purl.org/vocab/frbr/core#Manifestation">
+        <owl:equivalentClass rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#Manifestation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#Expression -->
+
+    <owl:Class rdf:about="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#Expression"/>
+    
+
+
+    <!-- https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#Folksonomy -->
+
+    <owl:Class rdf:about="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#Folksonomy">
+        <rdfs:subClassOf rdf:resource="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#Work"/>
+    </owl:Class>
+    
+
+
+    <!-- https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#Manifestation -->
+
+    <owl:Class rdf:about="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#Manifestation"/>
+    
+
+
+    <!-- https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#Work -->
+
+    <owl:Class rdf:about="https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#Work"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

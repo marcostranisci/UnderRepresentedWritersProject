@@ -1,0 +1,25 @@
+@prefix : <https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix urb: <https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:mapping-88532065> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT DISTINCT edition,_edition_id FROM all_editions"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "edition";
+          rr:termType rr:Literal
+        ];
+      rr:predicate :hasIdentifier
+    ], [ a rr:PredicateObjectMap;
+      rr:object urb:OpenLibrary;
+      rr:predicate :wasDerivedFrom
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class urb:Manifestation;
+      rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#{_edition_id}";
+      rr:termType rr:IRI
+    ] .

@@ -1,0 +1,62 @@
+@prefix : <https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:MAPID-f715cf69f6a3461e98c54cade4f5de50> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "select distinct year from all_years"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "year";
+          rr:termType rr:Literal
+        ];
+      rr:predicate :date
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class :TimeInterval;
+      rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{year}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:MAPID-280558f5a6f64181835ae8b8acc80066> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "select distinct * from all_languages"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "label";
+          rr:termType rr:Literal
+        ];
+      rr:predicate rdfs:label
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class :Language;
+      rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{lang}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:MAPID-fdc5f1d70d354356b072d1f57f656ade> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "select distinct * from all_countries"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{Continent}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :isPartOf
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "countryLabel";
+          rr:termType rr:Literal
+        ];
+      rr:predicate rdfs:label
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class :Country;
+      rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{CountryIsoCode}";
+      rr:termType rr:IRI
+    ] .

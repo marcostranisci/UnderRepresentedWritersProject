@@ -1,0 +1,111 @@
+@prefix : <https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix urb: <https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:mapping-1790573606> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "select distinct _id,_synopsis_id from gr_works_and_synopsis"
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class :Description;
+      rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{_synopsis_id}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:mapping--1286511457> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "select distinct _id,_synopsis_id from gr_works_and_synopsis"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{_synopsis_id}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :isDescribedBy
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{_id}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:mapping-1541986351> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "select distinct _id,lang from gr_works_and_lang"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{lang}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate :language
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{_id}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:mapping-1451705781> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "select distinct _subj_id,subject from gr_subjects"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:object urb:Goodreads;
+      rr:predicate :wasDerivedFrom
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "_subj_id";
+          rr:termType rr:Literal
+        ];
+      rr:predicate rdfs:label
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class urb:Folksonomy;
+      rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{_subj_id}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:mapping--1801615673> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "select distinct * from gr_works_and_subjects"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#{_subj_id}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate urb:hasSubject
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{_id}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:mapping--207132035> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT DISTINCT _id,title,work FROM all_urb_works WHERE _id regexp '_gr_'"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "title";
+          rr:termType rr:Literal
+        ];
+      rr:predicate dc:title
+    ], [ a rr:PredicateObjectMap;
+      rr:object urb:GoodReads;
+      rr:predicate :wasDerivedFrom
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "work";
+          rr:termType rr:Literal
+        ];
+      rr:predicate :hasIdentifier
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class urb:Expression;
+      rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#{_id}";
+      rr:termType rr:IRI
+    ] .
