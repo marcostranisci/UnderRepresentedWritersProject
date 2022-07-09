@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix urb: <https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:MAPID-4a2679a4c37f417984831e2085790c26> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "select distinct _edition_id,CountryIsoCode from ol_editions_and_linked_subject_countries"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urwriters.owl#{CountryIsoCode}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate urb:hasSubject
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:template "https://underrepresented.di.unito.it/wp-content/uploads/urbooks.owl#{_edition_id}";
+      rr:termType rr:IRI
+    ] .
