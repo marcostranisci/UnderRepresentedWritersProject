@@ -44,5 +44,5 @@ In the table below all the r2rml mapping files are listed together with the type
 |urwriters-mapping_gb_publication_events.r2ml|all the information about the publications of an edition|Google Books|
 |urwriters-mapping_countries_years_langs.r2ml|all languages, countries, and years|all resources|
 
-###SPARQL endpoint
+### SPARQL endpoint
 Due to some memory issues the SPARQL enpoint is not fully accessible yet. However, you can perform some queries from [this page](https://underrepresented.di.unito.it/index.php/sparql-queries/)
