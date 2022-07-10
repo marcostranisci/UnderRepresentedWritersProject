@@ -1,6 +1,9 @@
 ## The URW-KG
 In this folder you can find all the information about the Under-Represented Writers Knowledge Graph (URW-KG)
 
+### The Knowledge Graph
+In this folder you can access to [all the .ttl files that compose the Knowledge Graph](https://drive.google.com/drive/folders/1YZ1a5vfcm_s-k9xl7W5jdBOD0uLb5MmP?usp=sharing). Files have been materialized with Ontop (see below)
+
 ### Ontop Mappings
 
 For populating the ontology we used [Ontop](https://ontop-vkg.org/), a Virtual Knowledge Graph system that allows to materialize triples from a relational database. In the folder [all_mappings](./all_mappings) you can find all the r2rml files used for converting SQL database to the KG. For testing the mapping you must:
@@ -15,7 +18,8 @@ For populating the ontology we used [Ontop](https://ontop-vkg.org/), a Virtual K
 ontop-cli-x.x.x/ontop materialize -t urwriters.owl -p urwriters.properties -m all_mappings/urwriters-mappings_wd_works.r2ml -f turtle --disable-reasoning -o urwriters_mapped.ttl
 ```
 
-### Summary of the mapping files
+#### Summary of the mapping files
+In the table below all the r2rml mapping files are listed together with the type of entities they map and the source of knowledge
 
 |**mapping file**|**mapped entities**|**Source**|
 |-----------------|------------------|----------|
@@ -39,3 +43,6 @@ ontop-cli-x.x.x/ontop materialize -t urwriters.owl -p urwriters.properties -m al
 |urwriters-mapping_gb_publishers_descriptions.r2ml|all editions, their synopsis, and publishers|Google Books|
 |urwriters-mapping_gb_publication_events.r2ml|all the information about the publications of an edition|Google Books|
 |urwriters-mapping_countries_years_langs.r2ml|all languages, countries, and years|all resources|
+
+###SPARQL endpoint
+Due to some memory issues the SPARQL enpoint is not fully accessible yet. However, you can perform some queries from [this page](https://underrepresented.di.unito.it/index.php/sparql-queries/)
