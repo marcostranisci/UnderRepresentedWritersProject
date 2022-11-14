@@ -11,7 +11,7 @@ log.basicConfig(
 )
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--dataset",type=str,default='gr', help='you can choose between: gr=Goodreads wd=Wikipedia and ol=OpenLibrary')
+parser.add_argument("--dataset",type=str,default='wd', help='you can choose between: gr=Goodreads wd=Wikipedia and ol=OpenLibrary')
 parser.add_argument("--model",type=str,default='DistMult', help='choose between these five available models: DistMult RESCAL TransE TransR CompGCN')
 parser.add_argument("--dim",type=str,default='64', help='choose between two dimensions: 128, 64')
 parser.add_argument("--ent",type=str,default='authors',help='choos between: authors, works')
