@@ -24,12 +24,13 @@ with open('config.yaml') as f:
 embeddings = pd.read_csv(params['data']['embedding_path'].format(args.dataset,args.model,args.dim),sep='\t')
 mappings = pd.read_csv(params['data']['mapping_path'].format(args.dataset,args.model,args.dim),sep='\t')
 
+id_col = '_author_id' if args.ent=='authors' else '_id'
 
-mappings.columns = ['_author_id','idx'] if args.ent =='authors' else ['_id','idx']
-mappings._author_id = mappings._author_id.apply(lambda x:x.split('#')[-1][:-1])
+mappings.columns = [id_col,'idx']
+mappings[id_col] = mappings[id_col].apply(lambda x:x.split('#')[-1][:-1])
 
 ents = pd.read_csv(params['data'][args.ent])
-mappings = mappings.merge(ents[['_author_id','label']]) if args.ent =='authors' else mappings.merge(ents[['_id','label']])
+mappings = mappings.merge(ents[[id_col,'label']])
 
 embeddings.columns = [x for x in range(int(args.dim))]
 embeddings = embeddings.reset_index()
