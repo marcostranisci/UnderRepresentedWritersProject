@@ -1,0 +1,5 @@
+data:
+  embedding_path: /path_to_your_embeddings_folder/dataset={}_works_model={}_dim={}_epochs=20/embeddings.tsv
+  mapping_path: /path_to_your_embeddings_folder/dataset={}_works_model={}_dim={}_epochs=20/entities_to_id.tsv
+  authors: ../entities/all_authors_underrep.csv
+  works: ../entities/all_urb_works.csv
