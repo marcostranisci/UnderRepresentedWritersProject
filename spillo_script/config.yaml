@@ -1,5 +1,5 @@
 data:
-  embedding_path: /your_path_to_embeddings/dataset={}_works_model={}_dim={}_epochs=20/embeddings.tsv
-  mapping_path: /your_path_to_embeddings/dataset={}_works_model={}_dim={}_epochs=20/entities_to_id.tsv
+  embedding_path: /home/nbdotti62/experiments/kg_embeddings_URW/embeddings/dataset={}_works_model={}_dim={}_epochs=20/embeddings.tsv
+  mapping_path: /home/nbdotti62/experiments/kg_embeddings_URW/embeddings/dataset={}_works_model={}_dim={}_epochs=20/entities_to_id.tsv
   authors: ../entities/all_authors_underrep.csv
   works: ../entities/all_urb_works.csv
