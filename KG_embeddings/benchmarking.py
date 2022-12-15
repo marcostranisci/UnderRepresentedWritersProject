@@ -43,10 +43,10 @@ embeddings = {row[0]:row[4:] for row in embeddings.iloc[:].values}
 
 def compute_percentage(a_df,a_number):
 
-
+    n_authors = len(a_df[:a_number][a_df[:a_number].underrepresented==1])
     perc_sample = round(len(a_df[:a_number][a_df[:a_number].underrepresented==1])/a_number,3)
 
-    return perc_sample
+    return perc_sample,n_authors
 
 def average_map(a_df,a_number):
 
@@ -92,25 +92,25 @@ def find_similarity(id_):
     sample_01 = int(len(mappings)/100)
 
     perc_01 = compute_percentage(df,sample_01)
-    map_av_01 = average_map(df,sample_01)
+    #map_av_01 = average_map(df,sample_01)
     perc_10 = compute_percentage(df,sample_10)
-    map_av_10 = average_map(df,sample_10)
+    #map_av_10 = average_map(df,sample_10)
     perc_05 = compute_percentage(df,sample_05)
-    map_av_05 = average_map(df,sample_05)
-    print('percentage: {}, {}, {}\nmap_average: {}, {}, {}'.format(perc_01,perc_05,perc_10,map_av_01,map_av_05,map_av_10))
-    all_metrics = [perc_01,perc_05,perc_10,map_av_01,map_av_05,map_av_10]
+    #map_av_05 = average_map(df,sample_05)
+    log.info('results: {}, {}, {}'.format(perc_01,perc_05,perc_10))
+    all_metrics = [perc_01[0],perc_01[1],perc_05[0],perc_05[1],perc_10[0],perc_10[1]]
     return all_metrics
 
 authors = mappings[mappings.underrepresented=='Western'][id_col].tolist()
 
-n = 42
+n = 16
 random.seed(n)
 
 random.shuffle(authors)
 l = list()
-for author in authors[:100]:
+for author in authors[:250]:
     sim = find_similarity(author)
     l.append(sim)
 
 
-pd.DataFrame(l,columns=['p_01','p_05','p_10','ap_01','ap_05','ap_10']).to_csv('map_avgs/new_metrics_{}_{}_{}.csv'.format(args.dataset,args.model,n),index=False)
+pd.DataFrame(l,columns=['p_01','a_01','p_05','a_05','p_10','a_10']).to_csv('most_sim_new/new_metrics_{}_{}_{}.csv'.format(args.dataset,args.model,n),index=False)
