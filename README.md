@@ -7,6 +7,8 @@
 
 <p> The project is curated by a team from the University of Turin, Department of Computer Science, and is hosted at https://underrepresented.di.unito.it.   </p>
 
+<p> At the following url you can try some SPARQL queries: https://underrepresented.di.unito.it/index.php/knowledge-graph/</p>
+
 For any question you can write to [marcoantonio.stranisci@unito.it](marcoantonio.stranisci@unito.it)
 
   
