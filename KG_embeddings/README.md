@@ -5,4 +5,6 @@
 * install pip
 * install requirements: pip install -r requirements.txt
 * python 10_most_similar.py for finding the ten most similar authors that you prompt (add the --help argument to explore all the options you have)
+* python find_most_similar.py for finding the most similar Transnational authors given a Western one
+* python benchmarking.py for computing the percentage of Transnational writers in the top 1% K, 5% K and 10% K
 
