@@ -9,7 +9,7 @@
 
 <h3>SPARQL QUERIES</h3>
 
-<p> Here you can try some SPARQL queries: https://underrepresented.di.unito.it/index.php/knowledge-graph/</p>
+<p> Here you can try some SPARQL queries:</p>
 
 1. [Find a sample of 100 writers, their year and country of birth](https://kgccc.di.unito.it/sparql/urwriters?default-graph-uri=&query=PREFIX+%3A%3Chttps%3A%2F%2Fpurl.archive.org%2Furwriters%23%3E%0D%0APREFIX+urb%3A%3Chttps%3A%2F%2Fpurl.archive.org%2Furbooks%23%3E%0D%0APREFIX+rdfs%3A%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fperson+%3Fyear+%3Fcountry%0D%0AWHERE+%7B+%3Fbirth+a+%3ABirth%3B+%3AisSettingFor+%3Fp%2C%3Fy%2C%3Fc.%0D%0A%3Fp+a+%3APerson%3B+rdfs%3Alabel+%3Fperson.%0D%0A%3Fy+a+%3ATimeInterval%3B+rdfs%3Alabel+%3Fyear.%0D%0A%3Fc+a+%3ACountry%3B+rdfs%3Alabel+%3Fcountry%0D%0A%0D%0A%0D%0A%7D+LIMIT+100&format=text%2Fx-html%2Btr&timeout=0&signal_void=on)
 2. [Count writers in the KG grouped by gender and condition](https://kgccc.di.unito.it/sparql/urwriters?default-graph-uri=&query=PREFIX+%3A%3Chttps%3A%2F%2Fpurl.archive.org%2Furwriters%23%3E%0D%0APREFIX+rdfs%3A%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0Aselect+distinct+%3Frole+%3Fgender+%28count%28%3Frole%29+as+%3Fcounted_role%29+where+%7B%0D%0A%3Fa+a+%3APerson%3B+%3Agender+%3Fg%3B+%3AhasRole+%3Fr%3B+rdfs%3Alabel+%3Fauthor.%0D%0A%3Fg+rdfs%3Alabel+%3Fgender+.%0D%0A%3Fr+rdfs%3Alabel+%3Frole+.%0D%0A%7D+group+by+%3Fgender+%3Frole+order+by+%3Frole&format=text%2Fx-html%2Btr&timeout=0&signal_void=on)
